@@ -469,12 +469,12 @@ input {
     }
 
     50%{
-        transform:scale(1.08);
-        filter:
-            brightness(1.8)
-            drop-shadow(0 0 6px white)
-            drop-shadow(0 0 12px gold);
-    }
+    transform:scale(1.05);
+    filter:
+        brightness(1.15)
+        drop-shadow(0 0 4px #d4af37)
+        drop-shadow(0 0 7px #c9a227);
+}
 
 }
 /* ======================
@@ -2041,4 +2041,293 @@ body.slideshow-open {
         display: none;
     }
 
+}
+/* ==========================================
+   Diane & Robert's Golden Anniversary Theme
+========================================== */
+
+:root {
+    --gold-deep: #8a6515;
+    --gold: #c9a227;
+    --gold-light: #e7d48b;
+    --champagne: #f6eed8;
+    --ivory: #fffdf7;
+    --warm-text: #5a4632;
+}
+
+/* Main page background */
+body {
+    background:
+        linear-gradient(135deg, #fffdf7, #f3e8c8);
+    color: var(--warm-text);
+}
+
+/* Main quiz/start cards */
+.container,
+.card,
+.round-card {
+    background: var(--ivory);
+    border-color: var(--gold);
+}
+
+/* Main headings */
+.title,
+.card h1,
+.finish-title,
+.finish-heading,
+.round-card h1,
+#question {
+    color: var(--gold-deep);
+}
+
+/* Score area */
+.score-panel {
+    background: var(--champagne);
+}
+
+#score {
+    color: var(--gold-deep);
+}
+
+/* Progress bar */
+.progress-bar {
+    background: #e5dfd0;
+}
+
+#progress {
+    background:
+        linear-gradient(
+            90deg,
+            #f6dc70,
+            #c9a227,
+            #a67c18
+        );
+}
+
+/* Main buttons */
+.start-btn,
+.answer,
+.card button {
+    background:
+        linear-gradient(
+            180deg,
+            #b99028,
+            #8a6515
+        );
+    color: white;
+}
+
+.start-btn:hover,
+.answer:hover,
+.card button:hover {
+    background:
+        linear-gradient(
+            180deg,
+            #c9a227,
+            #9c7419
+        );
+}
+
+/* Photograph frames */
+.photo-frame {
+    background: #fffdf7;
+    border-color: #d8c285;
+}
+
+/* Photo captions */
+.photo-note-title {
+    color: var(--gold-deep);
+}
+
+.photo-note-text {
+    color: #594a39;
+}
+
+/* Replace little decorative diamond on captions */
+.photo-frame .image-caption::before {
+    content: "✨";
+}
+
+/* Password screen */
+.password-box {
+    background: var(--ivory);
+    border: 2px solid var(--gold-light);
+}
+
+/* Input fields */
+input {
+    border-color: #d8c99d;
+}
+
+input:focus {
+    outline: none;
+    border-color: var(--gold);
+    box-shadow: 0 0 0 3px rgba(201, 162, 39, 0.18);
+}
+
+/* Final screen score */
+.finish-score {
+    color: var(--gold);
+}
+
+/* Round intro border */
+.round-photo {
+    border-color: var(--gold);
+}
+/* Golden 50th Anniversary badge */
+
+.golden-50-badge {
+    width: 92px;
+    height: 92px;
+    margin: 12px auto 20px;
+    border: 3px solid #c9a227;
+    border-radius: 50%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    background: linear-gradient(
+        145deg,
+        #fffdf7,
+        #f4e3a4
+    );
+
+    box-shadow:
+        0 4px 12px rgba(138, 101, 21, 0.22),
+        inset 0 0 12px rgba(255, 255, 255, 0.8);
+}
+
+.golden-50-number {
+    font-family: Georgia, serif;
+    font-size: 2.4rem;
+    font-weight: bold;
+    line-height: 0.9;
+    color: #8a6515;
+}
+
+.golden-50-years {
+    margin-top: 7px;
+    font-size: 0.68rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: #8a6515;
+}
+/* ==========================================
+   Golden Anniversary round screens
+========================================== */
+
+.round-card {
+    background:
+        linear-gradient(
+            180deg,
+            #fffdf7,
+            #f8f0d8
+        );
+    border-color: #c9a227;
+
+    box-shadow:
+        0 15px 40px rgba(138, 101, 21, 0.25);
+}
+
+.round-card h1 {
+    color: #8a6515;
+    font-family: Georgia, serif;
+}
+
+.round-card p {
+    color: #5a4632;
+}
+
+.round-photo {
+    border-color: #c9a227;
+
+    box-shadow:
+        0 6px 18px rgba(138, 101, 21, 0.22);
+}
+
+.round-card .start-btn {
+    background:
+        linear-gradient(
+            180deg,
+            #b99028,
+            #8a6515
+        );
+}
+/* ==========================================
+   Golden Anniversary photo reveal styling
+========================================== */
+
+.image-caption.reveal-caption {
+    background:
+        linear-gradient(
+            135deg,
+            #fffdf5,
+            #f5e8bd
+        );
+
+    border-color: #d4b65f;
+
+    box-shadow:
+        0 4px 10px rgba(138, 101, 21, 0.16),
+        inset 0 0 18px rgba(201, 162, 39, 0.08);
+}
+
+/* Elegant gold photo title */
+.photo-note-title {
+    color: #8a6515;
+
+    font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
+    font-style: normal;
+    font-weight: bold;
+    letter-spacing: 0.2px;
+}
+
+/* Keep the memory text warm and readable */
+.photo-note-text {
+    color: #594a39;
+    font-family: Georgia, serif;
+}
+
+/* Change the scrapbook diamond to a gold sparkle */
+.photo-frame .image-caption::before {
+    content: "✨";
+}
+
+/* Keep the sparkle out of the way on phones */
+@media (max-width: 600px) {
+    .photo-frame .image-caption::before {
+        display: none;
+    }
+
+    .photo-note-title,
+    .photo-note-text {
+        font-family: Arial, Helvetica, sans-serif;
+        font-style: normal;
+    }
+}
+/* Golden answer buttons */
+
+.card .answer {
+    background: linear-gradient(
+        180deg,
+        #a98224,
+        #7d5d14
+    );
+
+    color: #ffffff;
+    border: 1px solid #71520f;
+}
+
+.card .answer:hover {
+    background: linear-gradient(
+        180deg,
+        #bd982e,
+        #8a6515
+    );
 }

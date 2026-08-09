@@ -11,7 +11,7 @@ if (sessionStorage.getItem("diamondQuizUnlocked") !== "true") {
 const playerName = localStorage.getItem("playerName") || "Guest";
 
 // Quiz state
-let currentQuestion = 0;
+let currentQuestion = 59;
 let score = 0;
 let currentRound = "";
 let playerAnswers = [];
@@ -81,7 +81,7 @@ const roundInfo = {
     "💍 Wedding Day": {
         title: "💍 Round 1 – Wedding Day",
         photo: "images/rounds/wedding.jpg",
-        message: "Every great love story has a beginning. Let's travel back to where Keith and Anne's wonderful journey together first began."
+        message: "Every great love story has a beginning. Let's travel back to where Diane and Robert's wonderful journey together first began."
     },
 
     "👨‍👩‍👧 Family": {
@@ -93,7 +93,7 @@ const roundInfo = {
     "🏖️ Holidays": {
         title: "🏖️ Round 3 – Holidays",
         photo: "images/rounds/holidays.jpg",
-        message: "Suitcases packed! Let's revisit some of Keith and Anne's favourite holidays and adventures over the years."
+        message: "Suitcases packed! Let's revisit some of Diane and Robert's favourite holidays and adventures over the years."
     },
 
     "📅 Guess the Year": {
@@ -116,10 +116,10 @@ const roundInfo = {
     photo: "images/rounds/whatnext.jpg",
     message: "Watch these video clips. Can you guess what happens next?"
 },
-    "❤️ Keith and Anne in 2026": {
-        title: "❤️ Final Round – Keith and Anne in 2026",
+    "❤️ Diane and Robert in 2026": {
+        title: "❤️ Final Round – Diane and Robert in 2026",
         photo: "images/rounds/berninaexpress.jpg",
-        message: "The Anniversary Quiz train has nearly reached the station. Just a few more stops left to celebrate an incredible 60 years of love, laughter and memories. Good luck!"
+        message: "The Anniversary Quiz train has nearly reached the station. Just a few more stops left to celebrate an incredible 50 years of love, laughter and memories. Good luck!"
     }
 
 };
@@ -309,7 +309,7 @@ buttons.forEach(btn => btn.disabled = false);
 
     button.textContent = q.answers[index];
     button.disabled = false;
-    button.style.background = "#7a1838";
+    button.style.background = "";
 });
 }
 function showCorrectSparkles() {
@@ -637,32 +637,32 @@ function showFinalScreen() {
     let heading = "";
     let message = "";
 
-    if (score === questions.length) {
+   if (score === questions.length) {
 
-        heading = "🌟 PERFECT SCORE! 🌟";
-        message = "You really know Keith & Anne!";
+    heading = "🌟 PERFECT SCORE! 🌟";
+    message = "You really know Diane & Robert!";
 
-    } else if (score >= 4) {
+} else if (score >= 4) {
 
-        heading = "🎉 Excellent! 🎉";
-        message = "What a fantastic score!";
+    heading = "🎉 Excellent! 🎉";
+    message = "What a fantastic score!";
 
-    } else if (score >= 3) {
+} else if (score >= 3) {
 
-        heading = "😊 Well Done! 😊";
-        message = "You know Keith & Anne pretty well!";
+    heading = "😊 Well Done! 😊";
+    message = "You know Diane & Robert pretty well!";
 
-    } else if (score >= 2) {
+} else if (score >= 2) {
 
-        heading = "👏 Thanks for Playing!";
-        message = "Every memory is special.";
+    heading = "👏 Thanks for Playing!";
+    message = "Every memory is special.";
 
-    } else {
+} else {
 
-        heading = "❤️ Thanks for Celebrating!";
-        message = "We hope you enjoyed the Diamond Challenge.";
+    heading = "❤️ Thanks for Celebrating!";
+    message = "We hope you enjoyed the Golden Anniversary Challenge.";
 
-    }
+}
 
    
 congratulationsSound.currentTime = 0;
@@ -696,7 +696,7 @@ congratulationsSound.onended = () => {
             <img
                 src="images/keith-anne-now.jpg"
                 class="finish-photo"
-                alt="Keith & Anne">
+                 alt="Diane & Robert">
 
             <h1 class="finish-title">
                 🏆 Congratulations ${playerName}! 🏆
@@ -714,11 +714,11 @@ congratulationsSound.onended = () => {
                 ${message}
             </p>
 
-            <p class="finish-thanks">
-    💎 Thank you for taking part in
-    <strong>Keith & Anne's Diamond Challenge</strong>
+           <p class="finish-thanks">
+    ✨ Thank you for taking part in
+    <strong>Diane & Robert’s Golden Anniversary Challenge</strong>
     and helping them celebrate
-    <strong>60 wonderful years of marriage.</strong>
+    <strong>50 wonderful years of marriage.</strong>
 </p>
 
 <p class="finish-message">
@@ -728,7 +728,7 @@ congratulationsSound.onended = () => {
 <p class="finish-footer">
     With all our love,<br>
     <strong>❤️ Kevin & Dawn ❤️</strong><br><br>
-    Diamond Wedding Anniversary • 2026
+    Golden Wedding Anniversary • 2026
 </p>
 
 <div class="finish-buttons">
@@ -792,7 +792,7 @@ printResultsButton.addEventListener("click", () => {
         <!DOCTYPE html>
         <html>
         <head>
-            <title>${playerName}'s Diamond Challenge Results</title>
+            <title>${playerName}'s Golden Anniversary Challenge Results</title>
 
             <style>
                 body {
@@ -810,7 +810,7 @@ printResultsButton.addEventListener("click", () => {
                 }
 
                h1 {
-    color: #7a1838;
+    color: #8a6515;
     text-align: center;
     font-size: 1.8rem;
 }
@@ -819,7 +819,7 @@ printResultsButton.addEventListener("click", () => {
                     text-align: center;
                     font-size: 26px;
                     font-weight: bold;
-                    color: #7a1838;
+                    color: #8a6515;
                     margin: 20px 0;
                 }
 
@@ -830,7 +830,7 @@ printResultsButton.addEventListener("click", () => {
                 }
 
                 .question-result h3 {
-                    color: #7a1838;
+                    color: #8a6515;
                 }
 
                 .footer {
@@ -873,7 +873,7 @@ printResultsButton.addEventListener("click", () => {
 
             <div class="results-sheet">
 
-                <h1>💎 Keith & Anne's Diamond Challenge 💎</h1>
+                <h1>✨ Diane & Robert’s Golden Anniversary Challenge ✨</h1>
 
                 <div class="score">
                     ${playerName}<br>
@@ -883,10 +883,10 @@ printResultsButton.addEventListener("click", () => {
                 ${questionResults}
 
                 <div class="footer">
-                    ❤️ Thank you for celebrating Keith & Anne's<br>
-                    Diamond Wedding Anniversary.<br><br>
-                    With love from all the family.
-                </div>
+                ❤️ Thank you for celebrating Diane & Robert’s<br>
+                Golden Wedding Anniversary.<br><br>
+                With love from all the family.
+</div>
 
             </div>
         
@@ -1340,7 +1340,7 @@ function showSlideshowEnding() {
             <p class="finish-message">
                 Thank you for celebrating
                 <strong>
-                    Keith & Anne's Diamond Wedding
+                    Diane & Robert's Golden Wedding
                     Anniversary
                 </strong>.
             </p>
@@ -1348,7 +1348,7 @@ function showSlideshowEnding() {
             <p class="finish-message">
                 We hope you've enjoyed looking back
                 over
-                <strong>60 wonderful years</strong>
+                <strong>50 wonderful years</strong>
                 of love, laughter and family memories.
             </p>
 

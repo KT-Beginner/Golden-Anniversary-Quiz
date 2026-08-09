@@ -1,12 +1,12 @@
 const questions = [
     {
         round: "💍 Wedding Day",
-        question: "What year did Keith and Anne get married?",
+        question: "What year did Diane and Robert get married?",
         answers: [
-            "1965",
-            "1966",
-            "1967",
-            "1968"
+            "1975",
+            "1976",
+            "1977",
+            "1978"
         ],
         correct: 1,
         audio: "audio/bells.mp3",
