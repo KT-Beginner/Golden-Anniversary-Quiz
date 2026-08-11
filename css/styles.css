@@ -2331,3 +2331,9 @@ input:focus {
         #8a6515
     );
 }
+/* Make the champagne glasses stand out */
+.diamond {
+    filter: drop-shadow(0 0 2px #8a6515)
+            drop-shadow(0 0 5px #c99a22)
+            drop-shadow(0 0 8px #d4af37);
+}

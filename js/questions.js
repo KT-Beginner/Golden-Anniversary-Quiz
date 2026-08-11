@@ -13,22 +13,22 @@ const questions = [
          manualNext: true,   
 
         image: "images/quiz/wedding.jpg",
-        photoTitle: "💍 Wedding Day 30th July 1966",
-        photoText: "⛪ St.Paul's Methodist Church, Dronfield.",
+        photoTitle: "💍 Wedding Day 4th September 1976",
+        photoText: "⛪ St.Thomas Church, Brightside.",
         revealImageAfterAnswer: true
     },
     {
         round: "💍 Wedding Day",
         question: "How old were the Happy Couple on their wedding day?",
         answers: [
-            "19",
-            "20",
-            "21",
-            "22"
+            "Robert was 20 and Diane was 21",
+            "Robert was 22 and Diane was 21",
+            "Robert was 22 and Diane was 23",
+            "Robert was 23 and Diane was 24"
         ],
-        correct: 3,
+        correct: 2,
         image: "images/quiz/certificate.jpg",
-        photoTitle: "💍 Wedding Certificate",
+        photoTitle: "💍 Wedding Record",
         revealImageAfterAnswer: true
     },
     {
@@ -63,21 +63,21 @@ const questions = [
     },
     {
         round: "💍 Wedding Day",
-        question: "Which song was at Number 1 in the UK charts on 30th July 1966?",
+        question: "Which song was at Number 1 in the UK charts on 4th September 1976?",
         answers: [
-            "Out of Time – Chris Farlowe",
-            "Good Vibrations – The Beach Boys",
-            "You Don't Have to Say You Love Me – Dusty Springfield",
-            "Strangers in the Night – Frank Sinatra"
+            "Dancing Queen – Abba",
+            "Mull Of Kintyre – Wings",
+            "Bohemian Rhapsody – Queen",
+            "Under The Moon Of Love – Showaddywaddy"
         ],
         correct: 0,
-        audio: "audio/out-of-time-clip.mp3",
+        audio: "audio/dancingqueen.mp3",
          manualNext: true,   
 
-    image: "images/quiz/out-of-time.jpg",
+    image: "images/quiz/dancingqueen.jpg",
     revealImageAfterAnswer: true,
-    photoTitle: "🎵 Out of Time",
-    photoText: "Out of time - The song was written by Mick Jagger and Keith Richards. The Rolling Stones' own version was also released in 1966 on their 'Aftermath' album.",
+    photoTitle: "🎵 Dancing Queen",
+    photoText: "This was ABBA's 4th Number 1 single in the UK. It was also the 1st single to be released from their 4th studio album, 'Arrival'.",
     },
     { 
     round: "👨‍👩‍👧 Family",
@@ -699,46 +699,6 @@ caption: "🧺 Picnic at the racecourse",
     
 },
 {
-    round: "🎵 Music Round",
-    question: "Which legendary band recorded 'Lucy in the Sky with Diamonds' in 1967?",
-    answers: [
-        "The Kinks",
-        "The Beatles",
-        "The Hollies",
-        "The Who"
-    ],
-    correct: 1,
-
-    audioQuestion: "audio/lucy-intro.mp3",
-    audioAnswer: "audio/lucy-answer.mp3",
-    audioFull: "audio/lucy-full.mp3",
-
-    image: "images/quiz/lucy.jpg",
-    revealImageAfterAnswer: true,
-    photoTitle: "💎🎶 Lucy in the Sky with Diamonds",
-    photoText: "The song was written by John Lennon and Paul McCartney."
-},
-{
- round: "🎵 Music Round",
-    question: "The James Bond film 'Diamonds Are Forever' was released in 1971. Who sang the theme song?",
-    answers: [
-        "Shirley Bassey",
-        "Lulu",
-        "Nancy Sinatra",
-        "Barbra Streisand"
-    ],
-    correct: 0,
-
-    audioQuestion: "audio/diamonds-intro.mp3",
-    audioAnswer: "audio/diamonds-answer.mp3",
-    audioFull: "audio/diamonds-full.mp3",
-
-    image: "images/quiz/diamonds.jpg",
-    revealImageAfterAnswer: true,
-    photoTitle: "💎🎤 Diamonds Are Forever",
-    photoText: "The theme song was performed by Shirley Bassey."
-},
-{
  round: "🎵 Music Round",
     question: "'How Deep Is Your Love' by the Bee Gees featured on the soundtrack of which famous 1977 film?",
     answers: [
@@ -754,12 +714,12 @@ caption: "🧺 Picnic at the racecourse",
     audioFull: "audio/beegees-full.mp3",
     image: "images/quiz/beegees.jpg",
     revealImageAfterAnswer: true,
-    photoTitle: "💎🎤 How Deep Is Your Love",
+    photoTitle: "🎤 How Deep Is Your Love",
     photoText: "This became one of the Bee Gees' biggest hits."
 },
 {
  round: "🎵 Music Round",
-    question: "This song by Huey Lewis & The News was the theme song from which 1985 blockbuster film?",
+    question: "This song by Huey Lewis & The News was the theme song from which blockbuster film from the year Laura was born?",
     answers: [
         "Ghostbusters",
         "Top Gun",
@@ -773,7 +733,7 @@ caption: "🧺 Picnic at the racecourse",
     audioFull: "audio/poweroflove-full.mp3",
     image: "images/quiz/poweroflove.jpg",
     revealImageAfterAnswer: true,
-    photoTitle: "💎🍿 One of Karen's favourite movies!",
+    photoTitle: "🍿 Back to the Future, 1985",
     photoText: "🎬 Huey Lewis himself appears as the school audition judge who rejects the band for being 'too darn loud!'"
 },
 {
@@ -1050,7 +1010,7 @@ correct: 0,
 },
 
 {
-    round: "❤️ Keith and Anne in 2026",
+    round: "❤️ Diane and Robert in 2026",
     question: "🚆 Which famous Swiss train is this?",
   
     image: "images/quiz/glacierexpress.jpg",
@@ -1071,7 +1031,7 @@ correct: 0,
         
 },
 {
-    round: "❤️ Keith and Anne in 2026",
+   round: "❤️ Diane and Robert in 2026",
     question: "🚆 Which mountain did Keith & Anne 'climb' on 28th July 2026?",
   
     image: "images/quiz/matterhorn.jpg",
@@ -1090,7 +1050,7 @@ correct: 0,
      showPhotoTitleAfterAnswer: true,    
 },
  {
-    round: "❤️ Keith and Anne in 2026",
+    round: "❤️ Diane and Robert in 2026",
     question: "❤️ On 30th July 2026, how many days had Anne & Keith been married? (You may use a calculator!)",
   
     image: "images/quiz/switzerland.jpg",

@@ -715,7 +715,7 @@ congratulationsSound.onended = () => {
             </p>
 
            <p class="finish-thanks">
-    ✨ Thank you for taking part in
+    🥂 Thank you for taking part in
     <strong>Diane & Robert’s Golden Anniversary Challenge</strong>
     and helping them celebrate
     <strong>50 wonderful years of marriage.</strong>
@@ -873,7 +873,7 @@ printResultsButton.addEventListener("click", () => {
 
             <div class="results-sheet">
 
-                <h1>✨ Diane & Robert’s Golden Anniversary Challenge ✨</h1>
+                <h1>🥂 Diane & Robert’s Golden Anniversary Challenge 🥂</h1>
 
                 <div class="score">
                     ${playerName}<br>
