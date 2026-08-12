@@ -81,128 +81,108 @@ const questions = [
     },
     { 
     round: "👨‍👩‍👧 Family",
-    question: "What is the name of this seaside ride?",
-    image: "images/quiz/carousel.jpg",
-    caption: "🎠 Fun at the Fair",
-
-     revealImageAfterAnswer: true,
-    revealImage: "images/quiz/roundabout.jpg",
-
-    answers: [
-        "Helter Skelter",
-        "Waltzer",
-        "Donkey Ride",
-        "Carousel"
-    ],
-    correct: 3,
-    photoTitle: "🎠 Some Traditions Never Change",
-     showPhotoTitleAfterAnswer: true
-},
+    question: "What colour was Andrew's first car?",
+   answers: [
+            "Green",
+            "White",
+            "Black",
+            "Red"
+        ],
+        correct: 3,
+        image: "images/quiz/andrewcar.jpg", 
+        photoTitle: "🚗 Andrew's Red Car Registration : TOY11",
+        photoText: "Watch out, Lewis Hamilton!",
+        revealImageAfterAnswer: true
+    },
 {
     round: "👨‍👩‍👧 Family",
-    
     question: "Where was this photograph taken?",
-
-    image: "images/quiz/pool.jpg",
-caption: "☀️💦 Cooling off on a hot summer's day.",
-    revealImageAfterAnswer: true,
-    revealImage: "images/quiz/norwood.jpg",
-   
     answers: [
-        "Brookside Glen",
-        "Norwood Avenue",
-        "The Green",
-        "Wype Road"
+        "Beacon Way",
+        "Earl Marshall Road",
+        "Smithy Carr Avenue",
+        "Stuart Grove"
     ],
-
     correct: 1,
-        
-     photoTitle: "🏠 128 Norwood Avenue, Hasland",
-    
+
+    image: "images/quiz/diane1985.jpg",
+
+    photoTitle: "🍼 Hello Laura!",
+    photoText: "🧸 A new addition to the family",
+
+    showPhotoTitleAfterAnswer: true
 },
     {
     round: "👨‍👩‍👧 Family",
     
-    question: "Karen once had a birthday cake made in the shape of a ...",
+    question: "What famous toy was released internationally in 1980?",
 
-    image: "images/quiz/womble.jpg",
+    image: "images/quiz/toys.jpg",
 
     revealImageAfterAnswer: true,
-    revealImage: "images/quiz/wombleanswer.jpg",
+    revealImage: "images/quiz/rubikscube.jpg",
    
     answers: [
-        "Mouse",
-        "Sheep",
-        "Womble",
-        "Wombat"
+        "Rubik’s Cube",
+        "Space Hopper",
+        "Etch A Sketch",
+        "Simon"
     ],
 
-    correct: 2,
-        audio: "audio/wombles.mp3",
-         manualNext: true,   
-
-     photoTitle: "Remember your a womble, you're a womble, you're a wooooooomble!",
-    photoText: "♻️ The Wombles were promoting recycling in the 1970s—decades before it became a worldwide movement!",
+    correct: 0,
+    photoTitle: "The Rubik’s cube has approximately 43 quintillion possible combinations",
+    photoText: "🏖️'And Robert thought he’d solve it before going home…' 😄",
 },
 {
     round: "👨‍👩‍👧 Family",
     
     question: "What was the name of this family dog?",
 
-    image: "images/quiz/cindypup.jpg",
+    image: "images/quiz/pepper.jpg",
 
     revealImageAfterAnswer: true,
-    revealImage: "images/quiz/cindy.jpg",
+    revealImage: "images/quiz/pepper2.jpg",
        
     answers: [
-        "Tigger",
-        "Trinity",
-        "Barbie",
-        "Cindy"
-    ],
-
-    correct: 3,   
-
-     photoTitle: "🦴 Cindy the family dog",
-},
-{
-    round: "👨‍👩‍👧 Family",
-    question: "Look at this school photo. Can you spot where Kevin is?",
-    image: "images/quiz/schoolclass.jpg",
-
-    answers: [
-        "Front row",
-        "Back row",
-        "Second row down",
-        "Second row up"
-    ],
-
-    correct: 0,
-
-    photoTitle: "📸 Front row, second from the left",
-    showPhotoTitleAfterAnswer: true
-},
-{
-    round: "👨‍👩‍👧 Family",
-    
-    question: "In the 1980s Keith was Head of William Rhodes Secondary School.  Why did he make the news in 1987?",
-
-    image: "images/quiz/keithschool.jpg",
-
-    revealImageAfterAnswer: true,
-    revealImage: "images/quiz/police.jpg",
-       
-    answers: [
-        "He won a national 'Head Teacher of the Year' award",
-        "He broke the world record for the longest assembly",
-        "He was sent a kissogram by a practical joker",
-        "He appeared on Blue Peter with the school choir"
+        "Sabre",
+        "Muttley",
+        "Pepper",
+        "Snoopy"
     ],
 
     correct: 2,   
 
-     photoTitle: "👮‍♀️ Here's the newspaper clip",
+     photoTitle: "🦴 Pepper the family dog",
 },
+ { 
+    round: "👨‍👩‍👧 Family",
+    question: "Which song from Kylie Minogue's debut album reached number one in the UK in 1988?",
+   answers: [
+            "The Loco-Motion",
+            "Got to Be Certain",
+            "Je ne sais pas pourquoi",
+            "I Should Be So Lucky"
+        ],
+        correct: 3,
+        image: "images/quiz/kylie.jpg", 
+        photoTitle: "🎶 I Should Be So Lucky spent 5 weeks at number one.",
+        photoText: "The 3 other songs peaked at number two",
+        revealImageAfterAnswer: true
+    },
+{ 
+    round: "👨‍👩‍👧 Family",
+    question: "Which actor played Batman in the 1989 film Batman?",
+   answers: [
+            "Michael Keaton",
+            "Christian Bale",
+            "Christian Slater",
+            "Val Kilmer"
+        ],
+        correct: 0,
+        image: "images/quiz/batman.jpg", 
+        photoTitle: "🦇 Holy T-shirts, Batman",
+        revealImageAfterAnswer: true
+    },
 
 {
         round: "👨‍👩‍👧 Family",
@@ -493,14 +473,14 @@ caption: "☀️💦 Cooling off on a hot summer's day.",
 },
 { 
     round: "📅 Guess the Year",
-    question: "Which year is this?",
-    image: "images/quiz/babykevin.jpg",
+    question: "Kylie Minogue’s debut album was the UK’s best-selling album of which year?",
+    image: "images/quiz/kylie.jpg",
     
     answers: [
-        "1967",
-        "1968",
-        "1969",
-        "1970"
+        "1987",
+        "1988",
+        "1989",
+        "1990"
     ],
     correct: 0,
     photoTitle: "🍼 Kevin aged 2 weeks",
