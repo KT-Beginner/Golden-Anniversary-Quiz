@@ -213,8 +213,8 @@ const questions = [
     revealVideo: "videos/jail.mp4",
     revealImage: "images/quiz/jail2.jpg",
 
-    photoTitle: "🔒 Alcatraz had nothing on this safety gate! 😄",
-    photoText: "36 men made 14 escape attempts from Alcatraz between 1934 and 1963.  The fate of three men who did escape in 1962 remains a mystery ⛓️",
+    photoTitle: "🔒 Alcatraz had nothing on this safety gate!",
+    photoText: "36 men made 14 escape attempts from Alcatraz between 1934 and 1963.  Oscar's already checking for weaknesses in the perimeter… 😄",
 
      answers: [
         "Devil's Island",
