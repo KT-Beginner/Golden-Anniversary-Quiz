@@ -87,7 +87,7 @@ const roundInfo = {
     "👨‍👩‍👧 Family": {
         title: "👨‍👩‍👧 Round 2 – Family",
         photo: "images/rounds/family.jpg",
-        message: "From two became many. Time to see how well you know the children, grandchildren and the memories they've created together."
+        message: "Time to see how well you know Diane and Robert and the memories they've created together."
     },
 
     "🏖️ Holidays": {
@@ -576,12 +576,13 @@ if (answerAudio) {
 
 } else {
 
-    // Video questions show this only after the reveal video finishes
-if (q.type !== "video") {
-    setTimeout(showNextButton, 1200);
+    // Video questions and reveal videos show Next only after the video finishes
+    if (q.type !== "video" && !q.revealVideo) {
+        setTimeout(showNextButton, 1200);
+    }
+
 }
-}
-    });
+});
 });
 
 // ==========================================

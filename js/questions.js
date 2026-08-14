@@ -33,32 +33,31 @@ const questions = [
     },
     {
         round: "💍 Wedding Day",
-        question: "What other big event also took place on 30th July 1966?",
+        question: "Which of these celebrity couples share Diane & Robert’s wedding anniversary of 4th September?",
         answers: [
-            "The Beatles Release 'Love me Do'",
-            "Apollo 11 Moon Landing",
-            "FIFA World Cup Final",
-            "70 Mph speed limit introduced on UK roads"
+            "Kevin Bacon & Kyra Sedgwick",
+            "David Beckham & Victoria Adams",
+            "Prince William & Catherine Middleton",
+            "Paul McCartney & Linda Eastman"
         ],
-        correct: 2,
-        image: "images/quiz/wembley.jpg",
-        photoTitle: "⚽ England beat West Germany 4–2 after extra time",
-        photoText: "🏆 The 1966 World Cup Final remains the UK's most watched television event ever. More than 30 million viewers tuned in!",
+        correct: 0,
+        image: "images/quiz/bacon.jpg",
+        photoTitle: "💍Kevin Bacon & Kyra Sedgwick married on 4 September 1988",
+        photoText: "🥂 Diane & Robert got there first!",
         revealImageAfterAnswer: true
     },
     {
         round: "💍 Wedding Day",
-        question: "Who scored the winning goal for England?",
+        question: "While Diane & Robert were getting married, Sheffield United were playing Southampton. What was the final score?",
         answers: [
-            "Bobby Charlton",
-            "Jimmy Greaves",
-            "Kevin Keegan",
-            "Geoff Hurst"
+            "Southampton 2–0 Sheffield United",
+            "Southampton 1–1 Sheffield United",
+            "Southampton 0–1 Sheffield United",
+            "Southampton 2–2 Sheffield United"
         ],
-        correct: 3,
-        image: "images/quiz/hurst.jpg",
-        photoTitle: "⚽🏆 Geoff Hurst scored three goals in the 1966 World Cup Final",
-        photoText: "For many years, Hurst was the only player ever to score a ‘hat-trick’ in a World Cup Final. However, Kylian Mbappé equalled the feat in the 2022 World Cup Final for France.",
+        correct: 1,
+        image: "images/quiz/united.jpg",
+        photoTitle: "⚽ A point for the Blades — and a perfect match for Diane & Robert! 🥂",
         revealImageAfterAnswer: true
     },
     {
@@ -152,7 +151,7 @@ const questions = [
 
     correct: 2,   
 
-     photoTitle: "🦴 Pepper the family dog",
+     photoTitle: "🦴 Pepper Ness",
 },
  { 
     round: "👨‍👩‍👧 Family",
@@ -186,48 +185,46 @@ const questions = [
 
 {
         round: "👨‍👩‍👧 Family",
-        question: "Which church did Karen and Adam get married in?",
+        question: "Who headlined the first day of Tramlines 2026",
 
-        image: "images/quiz/karenwedding.jpg",
+        image: "images/quiz/tramlines.jpg",
 
     revealImageAfterAnswer: true,
-    revealImage: "images/quiz/karenwedding2.jpg",
+    revealImage: "images/quiz/tramlines2.jpg",
 
         answers: [
-            "St Thomas à Becket Church, Ramsey",
-            "St Paul's Church, Hasland",
-            "St Michael and All Angels Church. Hathersage",
-            "St Thomas' Church, Brampton"
+            "Rick Astley",
+            "Blossoms",
+            "Pulp",
+            "Fatboy Slim"
         ],
         correct: 3,
-        audio: "audio/bells.mp3",
-         manualNext: true,   
+       
 
-        photoTitle: "💍 Wedding Day 8th July 2000",
-        photoText: "⛪ St Thomas' Church, Brampton.",
+        photoTitle: "🎵 Fatboy Slim",
+        photoText: "😄 But Oscar was the star of the show ⭐",
         revealImageAfterAnswer: true
     },
     {
         round: "👨‍👩‍👧 Family",
-        question: "Which caption best fits this photo?",
+       question: "Which famous prison was once considered almost impossible to escape from?",
+   
+    image: "images/quiz/alcatraz.jpg",
+    revealVideo: "videos/jail.mp4",
+    revealImage: "images/quiz/jail2.jpg",
 
-        image: "images/quiz/babylaura.jpg",
+    photoTitle: "🔒 Alcatraz had nothing on this safety gate! 😄",
+    photoText: "36 men made 14 escape attempts from Alcatraz between 1934 and 1963.  The fate of three men who did escape in 1962 remains a mystery ⛓️",
 
-    revealImageAfterAnswer: true,
-    revealImage: "images/quiz/babylaura2.jpg",
+     answers: [
+        "Devil's Island",
+        "Robben Island",
+        "Spike Island",
+        "Alcatraz"
+    ],
+    correct: 3,
 
-        answers: [
-            "Christmas morning",
-            "Our very first grandchild",
-            "A visit to the zoo",
-            "Celebrating an Anniversary together"
-        ],
-        correct: 1,
-        
-        photoTitle: "🍼 Hello Laura!",
-        photoText: "🧸 A new addition to the family",
-        revealImageAfterAnswer: true
-    },
+},
 {
      round: "👨‍👩‍👧 Family",
     question: "Which one of these outlaws stole from the rich to give to the poor?",
