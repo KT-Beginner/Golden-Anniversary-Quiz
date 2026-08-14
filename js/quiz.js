@@ -3,15 +3,15 @@ if (sessionStorage.getItem("diamondQuizUnlocked") !== "true") {
     window.location.href = "index.html";
 }
 // ==========================================
-// Keith & Anne's Diamond Challenge
-// Quiz Version 2
+// Diane & Robert's Anniversary Challenge
+// Quiz Version 1
 // ==========================================
 
 // Player name
 const playerName = localStorage.getItem("playerName") || "Guest";
 
 // Quiz state
-let currentQuestion = 12;
+let currentQuestion = 0;
 let score = 0;
 let currentRound = "";
 let playerAnswers = [];
@@ -87,7 +87,7 @@ const roundInfo = {
     "👨‍👩‍👧 Family": {
         title: "👨‍👩‍👧 Round 2 – Family",
         photo: "images/rounds/family.jpg",
-        message: "Time to see how well you know Diane and Robert and the memories they've created together."
+        message: "Time to see how well you know Diane, Robert, their family and the memories they've created together."
     },
 
     "🏖️ Holidays": {

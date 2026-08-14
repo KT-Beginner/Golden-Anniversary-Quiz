@@ -137,10 +137,10 @@ const questions = [
     
     question: "What was the name of this family dog?",
 
-    image: "images/quiz/pepper.jpg",
+    image: "images/quiz/pepper2.jpg",
 
     revealImageAfterAnswer: true,
-    revealImage: "images/quiz/pepper2.jpg",
+    revealImage: "images/quiz/pepper.jpg",
        
     answers: [
         "Sabre",
@@ -170,6 +170,22 @@ const questions = [
     },
 { 
     round: "👨‍👩‍👧 Family",
+    question: "What nautical term means the left-hand side of a boat when facing forwards?",
+   answers: [
+            "Starboard",
+            "Port",
+            "Bow",
+            "Stern"
+        ],
+        correct: 1,
+        image: "images/quiz/boat.jpg", 
+        photoTitle: "🚣 Ahoy, shipmates!",
+        revealImageAfterAnswer: true
+    },
+
+
+{ 
+    round: "👨‍👩‍👧 Family",
     question: "Which actor played Batman in the 1989 film Batman?",
    answers: [
             "Michael Keaton",
@@ -179,32 +195,11 @@ const questions = [
         ],
         correct: 0,
         image: "images/quiz/batman.jpg", 
-        photoTitle: "🦇 Holy T-shirts, Batman",
+        photoTitle: "🦇 The Dynamic Duo!",
         revealImageAfterAnswer: true
     },
 
-{
-        round: "👨‍👩‍👧 Family",
-        question: "Who headlined the first day of Tramlines 2026",
 
-        image: "images/quiz/tramlines.jpg",
-
-    revealImageAfterAnswer: true,
-    revealImage: "images/quiz/tramlines2.jpg",
-
-        answers: [
-            "Rick Astley",
-            "Blossoms",
-            "Pulp",
-            "Fatboy Slim"
-        ],
-        correct: 3,
-       
-
-        photoTitle: "🎵 Fatboy Slim",
-        photoText: "😄 But Oscar was the star of the show ⭐",
-        revealImageAfterAnswer: true
-    },
     {
         round: "👨‍👩‍👧 Family",
        question: "Which famous prison was once considered almost impossible to escape from?",
@@ -227,205 +222,163 @@ const questions = [
 },
 {
      round: "👨‍👩‍👧 Family",
-    question: "Which one of these outlaws stole from the rich to give to the poor?",
+    question: "What gas makes up most of the air we breathe?",
     answers: [
-        "Robin Hood",
-        "Laura Collins",
-        "Christopher Robin",
-        "Lois Collins"
+        "Oxygen",
+        "Carbon dioxide",
+        "Hydrogen",
+        "Nitrogen"
     ],
-    correct: 0,
-    image: "images/quiz/robin.jpg",
-    photoTitle: "🌳🏹 Robin Hood and his merry visitors",
-    showPhotoTitleAfterAnswer: true
+    correct: 3,
+    image: "images/quiz/lilo.jpg",
+    photoTitle: "🏖️ Inflation was a problem back then too!",
+     revealImageAfterAnswer: true
 },
 {
     round: "👨‍👩‍👧 Family",
-    question: "You will find the Mappa Mundi in this Cathedral, in which city?",
+    question: "Who is the 'odd one out' in this photo?",
 
-    image: "images/quiz/hereford.jpg",
+    image: "images/quiz/laura40.jpg",
 
     revealImageAfterAnswer: true,
-    revealImage: "images/quiz/hereford2.jpg",
+    revealImage: "images/quiz/laura40.jpg",
     
     answers: [
         
-        "York",
-        "Hereford",
-        "Canterbury",
-        "Ely"
+        "Laura",
+        "Kai",
+        "Elise",
+        "Robert"
     ],
 
-    correct: 1,
+    correct: 2,
     
-    photoTitle: "💛 Hereford July 2016.",
+    photoTitle: "🎂 Laura's 40th June 2025",
+    
     showPhotoTitleAfterAnswer: true,
 
-     photoText: "🍾🥂 One of Keith & Anne's Golden Anniversary celebrations (50 years together)",
+     photoText: "🍾 Elise wasn't actually there. We've added her to the photo!",
     
 },
+{
+        round: "👨‍👩‍👧 Family",
+        question: "Who headlined the first day of Tramlines 2026",
+
+        image: "images/quiz/tramlines.jpg",
+
+    revealImageAfterAnswer: true,
+    revealImage: "images/quiz/tramlines2.jpg",
+
+        answers: [
+            "Rick Astley",
+            "Blossoms",
+            "Pulp",
+            "Fatboy Slim"
+        ],
+        correct: 3,
+       
+
+        photoTitle: "🎵 Fatboy Slim",
+        photoText: "😄 But Oscar was the star of the show ⭐",
+        revealImageAfterAnswer: true
+    },
 
     {
         round: "🏖️ Holidays",
-    question: "Can you name the hotel?",
-    image: "images/quiz/tunisia.jpg",
-    caption:"🏖️☀️ A package holiday to Tunisia in the 1980s",
+    question: "Which famous Venetian landmark can be seen behind Robert and Andrew?",
+    image: "images/quiz/venice.jpg",
+    
     answers: [
-        "Tour Khalef",
-        "Marhaba Beach",
-        "El Kasar Resort",
-        "Sousse Palace"
+        "St Mark's Basilica",
+        "Rialto Bridge",
+        "Santa Maria della Salute",
+        "San Giorgio Maggiore"
     ],
     correct: 0,
 
-    revealImage: "images/quiz/hotel.jpg",
-    photoTitle: "☀️🌴 Tour Khalef Hotel, Sousse",
-    photoText: "✈️ A family holiday that started a passion for travel that continues to this day.",
-    revealImageAfterAnswer: true
+    photoTitle: "⛪ Venice, September 1983",
+    photoText: "🐦 Feeding time in St Mark's Square.  This Venice tradition was banned in 2008",
+   showPhotoTitleAfterAnswer: true,
 },    
 {
         round: "🏖️ Holidays",
-    question: "Which type of transport did Anne and Keith NOT use on their Far East trip in 2013?",
+    question: "In 1920, Which country won the last Olympic tug-of-war gold medal?",
     answers: [
-        "Boat",
-        "Bicycle",
-        "Water buffalo",
-        "Seaplane"
+        "USA",
+        "France",
+        "Sweden",
+        "Great Britain"
     ],
     correct: 3,
-    image: "images/quiz/buffalo.jpg",
-    photoTitle: "🐃 Water Buffalo is true!",
-    photoText: "They did not travel by seaplane.",
+    image: "images/quiz/tug.jpg",
+
+    photoTitle: "🏅 Andrew and Robert going for gold",
+    photoText: "Tug-of-war was an event at five Olympic Games between 1900 and 1920.",
     revealImageAfterAnswer: true
 },  
 {
         round: "🏖️ Holidays",
-    question: "On her birthday in 2014 in Madagascar, Anne made friends with a 'black-and-white ruffed'.  What kind of animal is this?",
+    question: "How is a traditional pedalo powered?",
     answers: [
-        "Penguin",
-        "Lemur",
-        "Monkey",
-        "Badger"
+        "A small motor",
+        "Pedals turned by the passengers",
+        "Wind power",
+        "Hand-operated paddles"
     ],
     correct: 1,
-    image: "images/quiz/lemur.jpg",
-    photoTitle: "🌿 Black-and-White Ruffed Lemur",
-    photoText: "Making a new friend in Madagascar.",
+    image: "images/quiz/pedalo.jpg",
+    photoTitle: "🚤 Pedal Power!",
     revealImageAfterAnswer: true
 },  
 {
         round: "🏖️ Holidays",
-    question: "One holiday in 2017 included a visit to Marsala. Where is this?",
+    question: "What is guaranteed on a British caravan holiday?",
+
     answers: [
-        "Portugal",
-        "Malta",
-        "Sicily",
-        "Croatia"
-    ],
-    correct: 2,
-    image: "images/quiz/marsala.jpg",
-    photoTitle: "🍷 Marsala, Sicily",
-    photoText: "Famous for Marsala wine - Keith in his element!",
+        "Wall-to-wall sunshine",
+        "Peace and quiet",
+        "At least one day of rain",
+        "An empty beach"
+        ],
+        correct: 2,
+    image: "images/quiz/caravan.jpg",
+    photoTitle: "🌞 It usually rains",
+    photoText: "But not today!",
     revealImageAfterAnswer: true
 },  
 {
         round: "🏖️ Holidays",
-    question: "Keith and Anne travelled to Japan to see the famous cherry blossoms. What are cherry blossoms called in Japanese?",
+    question: "Which Japanese company made its first complete motorcycle in 1949",
     answers: [
-        "Bonsai",
-        "Kimono",
-        "Origami",
-        "Sakura"
+        "Yamaha",
+        "Suzuki",
+        "Kawasaki",
+        "Honda"
     ],
     correct: 3,
-    image: "images/quiz/japan.jpg",
-    photoTitle: "🌸 Japan 2018",
-    photoText: "Hanami (cherry blossom viewing) and a traditional meal in a ryokan",
+    image: "images/quiz/honda.jpg",
+    photoTitle: "🏍️ Born to be Wild!",
+    photoText: "Andrew aged 5.",
     revealImageAfterAnswer: true
 },  
 {
         round: "🏖️ Holidays",
-    question: "Where did Anne and Keith meet Dracula in 2019?",
+    question: "Where was this photo taken?",
+     image: "images/quiz/train.jpg",
+
+     revealImageAfterAnswer: true,
+    revealImage: "images/quiz/postcard.jpg",
+       
     answers: [
-        "In the garlic aisle at Morrisons",
-        "On the Transfăgărășan Highway, Romania",
-        "At the blood donation centre",
-        "At Bran Castle in Romania"
+        "Great Yarmouth",
+        "Skegness",
+        "Majora",
+        "Ingoldmells"
     ],
-    correct: 3,
-    image: "images/quiz/brancastle.jpg",
-    photoTitle: "🧛 Bran Castle, Romania",
-    revealImageAfterAnswer: true
+    correct: 1,
+   
+    photoTitle: "🚂 1980s postcard from Skegness",
 },  
-{
-        round: "🏖️ Holidays",
-    question: "Which UK town is famously associated with Dracula?",
-    answers: [
-        "Whitby",
-        "Bath",
-        "Canterbury",
-        "York"
-    ],
-    correct: 0,
-    image: "images/quiz/whitby.jpg",
-    photoTitle: "🧛 Whitby Abbey steps",
-    photoText: "Bram Stoker stayed here in 1890 and the town influenced his novel 'Dracula'.",
-    revealImageAfterAnswer: true
-},
-  {
-        round: "🏖️ Holidays",
-    question: "Later in 2019 Keith & Anne visited the Azores.  Where are these located?",
-     image: "images/quiz/azores.jpg",
-    answers: [
-        "South Atlantic Ocean",
-        "Pacific Ocean",
-        "North Atlantic Ocean",
-        "Indian Ocean"
-    ],
-    correct: 2,
-
-    revealImage: "images/quiz/azores2.jpg",
-    photoTitle: "🍦 Ice Cream Time",
-    photoText: "🌍 The Azores are nine volcanic islands in the North Atlantic Ocean, around 900 miles west of Portugal.",
-    revealImageAfterAnswer: true,
-    
-},
-{
-        round: "🏖️ Holidays",
-    question: "On a tour of which region in 2022 did they visit an umbrella museum? Hint: Only a few kilometers from Switzerland.",
-     image: "images/quiz/umbrella.jpg",
-    answers: [
-        "The Greek Islands",
-        "The Balkans",
-        "The South of France",
-        "The Italian Lakes"
-    ],
-    correct: 3,
-
-    revealImage: "images/quiz/italyrain.jpg",
-    photoTitle: "☔ Keith should have bought one!",
-    photoText: "🍺 Day written off.  Time for a beer.",
-    revealImageAfterAnswer: true,
-    
-},
-{
-        round: "🏖️ Holidays",
-    question: "Which lake was this on the same trip?",
-     image: "images/quiz/maggiore.jpg",
-    caption: "☀️ Never mind - The sun will come out tomorrow!",
-    answers: [
-        "Lake Orta",
-        "Lake Garda",
-        "Lake Maggiore",
-        "Lake Como"
-    ],
-    correct: 2,
-
-    revealImage: "images/quiz/pizza.jpg",
-    photoTitle: "🍕🍺 Much nicer than chicken curry!",
-    revealImageAfterAnswer: true,
-    
-},
 {
         round: "🏖️ Holidays",
     question: "A visit to the Storehouse on their trip to Dublin in March 2024 included a sample of...",
