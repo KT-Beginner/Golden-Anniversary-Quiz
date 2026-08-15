@@ -235,6 +235,23 @@ const questions = [
      revealImageAfterAnswer: true
 },
 {
+     round: "👨‍👩‍👧 Family",
+question: "At which University did Laura complete her Master's in Teaching and Learning?",
+    image: "images/quiz/graduation.jpg",
+    
+    answers: [
+        "University of Sheffield",
+        "Durham University",
+        "Sheffield Hallam University",
+        "University of Leeds"
+    ],
+    correct: 2,
+
+    photoTitle: "🎓 Mastered It!",
+    photoText: "📜 A very proud graduation day.",
+   showPhotoTitleAfterAnswer: true,
+},  
+{
     round: "👨‍👩‍👧 Family",
     question: "Who is the 'odd one out' in this photo?",
 
@@ -260,28 +277,7 @@ const questions = [
      photoText: "🍾 Elise wasn't actually there. We've added her to the photo!",
     
 },
-{
-        round: "👨‍👩‍👧 Family",
-        question: "Who headlined the first day of Tramlines 2026",
 
-        image: "images/quiz/tramlines.jpg",
-
-    revealImageAfterAnswer: true,
-    revealImage: "images/quiz/tramlines2.jpg",
-
-        answers: [
-            "Rick Astley",
-            "Blossoms",
-            "Pulp",
-            "Fatboy Slim"
-        ],
-        correct: 3,
-       
-
-        photoTitle: "🎵 Fatboy Slim",
-        photoText: "😄 But Oscar was the star of the show ⭐",
-        revealImageAfterAnswer: true
-    },
 
     {
         round: "🏖️ Holidays",
@@ -381,50 +377,85 @@ const questions = [
 },  
 {
         round: "🏖️ Holidays",
-    question: "A visit to the Storehouse on their trip to Dublin in March 2024 included a sample of...",
+    question: "Robert and Andrew's T-shirts give a big clue — which year was this holiday?",
+    image: "images/quiz/ibiza.jpg",
+    
+    revealImageAfterAnswer: true,
+    revealImage: "images/quiz/cardibiza.jpg",
+
     answers: [
-        "Potato cakes",
-        "Guinness",
-        "Irish whiskey",
-        "Soda bread"
+        "1986",
+        "1988",
+        "1990",
+        "1992"
     ],
-    correct: 1,
-    image: "images/quiz/guinness.jpg",
-   photoTitle: "🍺 A Pint at the Guinness Storehouse",
-    revealImageAfterAnswer: true
+    correct: 2,
+    
+   photoTitle: "⚔️ 1st Division — Here We Come!",
+    photoText: "The Blades were going up… and Robert & Andrew were ready! ⚽"
 },
 {
         round: "🏖️ Holidays",
-    question: "Also in 2024 they visited the northernmost point you can reach by road in mainland Europe. Where was this?",
+    question: "Where was this holiday? Hint : renowned for its strong trade winds, windsurfing and spectacular sand dunes?",
+    image: "images/quiz/pool.jpg",
+    
+    revealImageAfterAnswer: true,
+    revealImage: "images/quiz/ventura.jpg",
+    
+   
     answers: [
-        "North Cape, Norway",
-        "Tromsø, Norway",
-        "The Arctic Circle, Finland",
-        "Svalbard, Norway"
+        "Fuerteventura",
+        "Tenerife",
+        "Lanzarote",
+        "La Palma"
     ],
     correct: 0,
-    image: "images/quiz/northcape.jpg",
-   photoTitle: "🧭 North Cape, Norway",
-    revealImageAfterAnswer: true
+    photoTitle: "🏖️ Sandblasted on the beach in Fuerteventura",
+    
 },
+
 {
         round: "🏖️ Holidays",
-    question: "In Uzbekistan in 2025, Keith tried a Chugurma. What is it?",
+    question: "👕 We've blanked out Andrew's shirt. What was the original design?",
+    image: "images/quiz/shirt1.jpg",
+    
+    revealImageAfterAnswer: true,
+    revealImage: "images/quiz/shirt2.jpg",
     answers: [
-        "A type of cheese",
-        "A traditional fur hat",
-        "A long ceremonial coat",
-        "A traditional rice dish"
+        "Red with yellow flowers",
+        "Animal from The Muppet Show",
+        "Scooby-Doo",
+        "Marvel superheroes"
     ],
     correct: 1,
-    image: "images/quiz/chugurma.jpg",
-   photoTitle: "🎩 Trying on a Chugurma",
-    revealImageAfterAnswer: true
+    audio: "audio/muppets.mp3",
+         manualNext: true,   
+   photoTitle: "🌴Morocco, September 2025",
+    photoText: "🥁 AN-I-MAL! AN-I-MAL!",
 },
 { 
     round: "📅 Guess the Year",
-    question: "Kylie Minogue’s debut album was the UK’s best-selling album of which year?",
-    image: "images/quiz/kylie.jpg",
+    question: "The LEGO building figure was launched in 1974.  What year were they equipped with moveable limbs and simple facial expressions?",
+    image: "images/quiz/lego.jpg",
+     revealImageAfterAnswer: true,
+    revealImage: "images/quiz/lego2.jpg",
+    
+    answers: [
+        "1978",
+        "1979",
+        "1980",
+        "1981"
+    ],
+    correct: 0,
+    photoTitle: "🧱 The next generation of LEGO builders",
+     
+},
+{ 
+    round: "📅 Guess the Year",
+    question: "Sky Television launched in the UK the same year as this holiday. Can you remember when?",
+    image: "images/quiz/pollensa1.jpg",
+     revealImageAfterAnswer: true,
+    revealImage: "images/quiz/pollensa2.jpg",
     
     answers: [
         "1987",
@@ -432,26 +463,26 @@ const questions = [
         "1989",
         "1990"
     ],
-    correct: 0,
-    photoTitle: "🍼 Kevin aged 2 weeks",
-     showPhotoTitleAfterAnswer: true
+    correct: 2,
+    photoTitle: "🏖️ Puerto Pollensa 1989",
+     
 },
 {
      round: "📅 Guess the Year",
-        question: "In which year did Anne & Keith celebrate their 'Crystal' wedding anniversary?",
+        question: "In which year did Diane & Robert celebrate their 'Crystal' wedding anniversary?",
         answers: [
-            "1971",
-            "1976",
             "1981",
-            "1986"
+            "1986",
+            "1991",
+            "1996"
         ],
         correct: 2,
         
-    image: "images/quiz/shuttle.jpg",
+    image: "images/quiz/web.jpg",
     revealImageAfterAnswer: true,
 
-    photoTitle: "🚀 We have liftoff.",  
-    photoText: "Space Shuttle Columbia made the first-ever Space Shuttle flight on 12th April 1981.",
+    photoTitle: "🌐 The World Wide Web became publicly accessible in 1991",  
+    photoText: "⚽ Also, Sheffield Wednesday won the League Cup, beating Manchester United 1–0 at Wembley.  Booooo",
     showPhotoTitleAfterAnswer: true
 },  
 { 
@@ -498,7 +529,7 @@ const questions = [
         "2005"
     ],
     correct: 1,
-    photoTitle: "🍼 Hello Lois!",
+    photoTitle: "🍼🧸 Hello Lois!",
     photoText: "🧸 A second grandchild arrives",
      showPhotoTitleAfterAnswer: true
 },
@@ -708,12 +739,12 @@ caption: "🧺 Picnic at the racecourse",
     round: "✅ True or False",
     type: "truefalse",
 
-    question: "This is Anne & Keith's wedding cake.",
+    question: "This baby is Andrew.",
 
-    image: "images/quiz/cakebw.jpg",
+    image: "images/quiz/babylaura.jpg",
 
     revealImageAfterAnswer: true,
-    revealImage: "images/quiz/cake.jpg",
+    revealImage: "images/quiz/babyandrew.jpg",
    
     answers: [
         "True",
@@ -722,38 +753,49 @@ caption: "🧺 Picnic at the racecourse",
 
     correct: 1,
 
-     photoTitle: "🎂 No. This cake was Karen and Adam's.",
-    photoText: "❤️ Made with love for their special day!",
+     photoTitle: "🧸 No that was Laura. This is Andrew's baby photo.",
+    photoText: "🍼 Hello Andrew!",
 },
 {
-    round: "✅ True or False",
-    type: "truefalse",
-    question: "The baby on Keith's shoulders is Karen.",
-    answers: [
+        round: "✅ True or False",
+        type: "truefalse",
+
+        question: "Fatboy Slim headlined the first day of Tramlines 2026",
+
+        image: "images/quiz/tramlines.jpg",
+
+    revealImageAfterAnswer: true,
+    revealImage: "images/quiz/tramlines2.jpg",
+
+        answers: [
         "True",
         "False"
     ],
-    correct: 1,
-    image: "images/quiz/shoulders.jpg",
-    photoTitle: "👶 Keith with baby Kevin on his shoulders",
-    showPhotoTitleAfterAnswer: true
-},
+        correct: 0,
+  
+
+        photoTitle: "🎵 Fatboy Slim",
+        photoText: "😄 But Oscar was the star of the show ⭐",
+        revealImageAfterAnswer: true
+    },
 {
     round: "✅ True or False",
     type: "truefalse",
-    question: "Anne & Keith celebrated their 'wood' anniversary in 1971",
+    question: "This photo was taken at Diane's 60th Birthday party.",
+    
+    image: "images/quiz/diane60.jpg",  
+    revealImageAfterAnswer: true,
+    revealImage: "images/quiz/diane602.jpg",
+
     answers: [
         "True",
         "False"
     ],
     correct: 0,
 
-    image: "images/quiz/decimal.jpg",
-    revealImageAfterAnswer: true,
-
-    photoTitle: "'Decimal Day'",
-    photoText: "🪙 Also in 1971 Britain switched to decimal currency.",
-    showPhotoTitleAfterAnswer: true
+    photoTitle: "🎂 September 2012",
+    photoText: " 🕯️ Happy 60th Birthday Diane!",
+    
 },
 {
     round: "✅ True or False",
@@ -877,7 +919,7 @@ correct: 0,
     revealVideo: "videos/7thbirthday2.mp4",
     revealImage: "images/quiz/7thbithdaystill3.jpg",
 
-    photoTitle: "🎂 Three puffs",
+    photoTitle: "🎂 🕯️Three puffs",
     photoText: "🕯️ Hooray. Third time lucky!",
 
     answers: [
