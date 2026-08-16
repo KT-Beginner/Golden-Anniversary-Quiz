@@ -11,7 +11,7 @@ if (sessionStorage.getItem("diamondQuizUnlocked") !== "true") {
 const playerName = localStorage.getItem("playerName") || "Guest";
 
 // Quiz state
-let currentQuestion = 53;
+let currentQuestion = 0;
 let score = 0;
 let currentRound = "";
 let playerAnswers = [];
@@ -118,8 +118,8 @@ const roundInfo = {
 },
     "❤️ Diane and Robert in 2026": {
         title: "❤️ Final Round – Diane and Robert in 2026",
-        photo: "images/rounds/berninaexpress.jpg",
-        message: "The Anniversary Quiz train has nearly reached the station. Just a few more stops left to celebrate an incredible 50 years of love, laughter and memories. Good luck!"
+        photo: "images/rounds/dianerobert2026.jpg",
+        message: "The Anniversary Quiz has nearly reached the end. Just a few more questions left to celebrate an incredible 50 years of love, laughter and memories. Good luck!"
     }
 
 };
@@ -695,7 +695,7 @@ congratulationsSound.onended = () => {
         <div class="finish-screen">
 
             <img
-                src="images/keith-anne-now.jpg"
+                src="images/family2026.jpg"
                 class="finish-photo"
                  alt="Diane & Robert">
 
@@ -728,7 +728,7 @@ congratulationsSound.onended = () => {
 
 <p class="finish-footer">
     With all our love,<br>
-    <strong>❤️ Kevin & Dawn ❤️</strong><br><br>
+    <strong>❤️ Dawn & Kevin ❤️</strong><br><br>
     Golden Wedding Anniversary • 2026
 </p>
 
@@ -884,10 +884,9 @@ printResultsButton.addEventListener("click", () => {
                 ${questionResults}
 
                 <div class="footer">
-                ❤️ Thank you for celebrating Diane & Robert’s<br>
+                💛 Thank you for celebrating Diane & Robert’s<br>
                 Golden Wedding Anniversary.<br><br>
-                With love from all the family.
-</div>
+               </div>
 
             </div>
         
@@ -1356,7 +1355,7 @@ function showSlideshowEnding() {
             <p class="finish-footer">
                 With all our love,<br>
                 <strong>
-                    ❤️ Kevin & Dawn ❤️
+                    ❤️ Dawn & Kevin ❤️
                 </strong>
             </p>
 

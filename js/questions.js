@@ -342,7 +342,30 @@ question: "At which University did Laura complete her Master's in Teaching and L
     showPhotoTitleAfterAnswer: true,
     
 },
+{
+    round: "👨‍👩‍👧 Family",
+    question: "Who was Oscar meeting for the very first time in this festive photo?",
 
+    image: "images/quiz/santa1.jpg",
+
+    revealImageAfterAnswer: true,
+    revealImage: "images/quiz/santa2.jpg",
+    
+    answers: [
+        
+        "A Christmas elf",
+        "A snowman",
+        "Santa",  
+        "Rudolph",
+    ],
+
+    correct: 2,
+    
+    photoTitle: "🎅 Ho Ho... NO!",
+      
+     photoText: "🎄 11 months old — and still deciding whether Santa could be trusted!",
+    
+},
     {
         round: "🏖️ Holidays",
     question: "Which famous Venetian landmark can be seen behind Robert and Andrew?",
@@ -744,6 +767,25 @@ caption: "🧺 Picnic at the racecourse",
 },
 {
  round: "🎵 Music Round",
+    question: "This song from 1983 is particularly appropriate for the quiz.  What was the band?",
+    answers: [
+        "Duran Duran",
+        "ABC",
+        "Spandau Ballet",
+        "Human League"
+    ],
+    correct: 2,
+
+    audioQuestion: "audio/gold-intro.mp3",
+    audioAnswer: "audio/gold-answer.mp3",
+    audioFull: "audio/gold-full.mp3",
+    image: "images/quiz/gold.jpg",
+    revealImageAfterAnswer: true,
+    photoTitle: "🎤 Spandau Ballet - Gold",
+    photoText: "🎬 Gary Kemp has said that when he wrote “Gold” he was trying to write something like a James Bond theme"
+},
+{
+ round: "🎵 Music Round",
     question: "This song by Huey Lewis & The News was the theme song from which blockbuster film from the year Laura was born?",
     answers: [
         "Ghostbusters",
@@ -763,22 +805,22 @@ caption: "🧺 Picnic at the racecourse",
 },
 {
  round: "🎵 Music Round",
-    question: "Can you name this Rihanna song from 2012?",
+    question: "And here's one Laura might remember. Who was this band?",
     answers: [
-        "Diamonds",
-        "Like a Diamond",
-        "Diamond Heart",
-        "Diamonds are a Girl's Best Friend"
+        "Hanson",
+        "The Jacksons",
+        "McFly",
+        "Boyzone"
     ],
     correct: 0,
 
-    audioQuestion: "audio/rihanna-intro.mp3",
-    audioAnswer: "audio/rihanna-answer.mp3",
-    audioFull: "audio/rihanna-full.mp3",
-    image: "images/quiz/rihanna.jpg",
+    audioQuestion: "audio/mmmbop-intro.mp3",
+    audioAnswer: "audio/mmmbop-answer.mp3",
+    audioFull: "audio/mmmbop-full.mp3",
+    image: "images/quiz/hanson.jpg",
     revealImageAfterAnswer: true,
-    photoTitle: "🎵 This song became one of Rihanna's biggest worldwide hits",
-    photoText: "💎 'Diamonds' was written by Australian singer-songwriter Sia, who reportedly wrote the lyrics in just 14 minutes"
+    photoTitle: "🎵 MMMBop.  In 1997 Hanson became the youngest group ever to have a UK No.1 album",
+    photoText: "🎸 Isaac, Taylor & Zac Hanson still perform together today"
 },
 {
  round: "🎵 Music Round",
@@ -1087,21 +1129,21 @@ correct: 0,
 },
  {
     round: "❤️ Diane and Robert in 2026",
-    question: "❤️ On 30th July 2026, how many days had Anne & Keith been married? (You may use a calculator!)",
+    question: "❤️ On 4th September 2026, how many days had Diane & Robert been married? (You may use a calculator!)",
   
-    image: "images/quiz/switzerland.jpg",
+    image: "images/quiz/dianerobert.jpg",  
   
     answers: [
-        "21,900 days",
-        "21,915 days",
-        "21,920 days",
-        "22,000 days"
+        "18,250 days",
+        "18,262 days",
+        "18,263 days",
+        "18,270 days"
     ],
 
     correct: 1,
 
-    photoTitle: "💎 60 wonderful years • 21,915 days • A lifetime of love, laughter and memories ❤️",
-    photoText: "That's: 60 × 365 = 21,900, plus 15 leap days = 21,915 days!",
+    photoTitle: "💛 50 wonderful years • 18,262 days • A lifetime of love, laughter and memories 💛",
+    photoText: "That's: 50 × 365 = 18,250, plus 12 leap days = 18,262 days!",
     
     showPhotoTitleAfterAnswer: true,
         
