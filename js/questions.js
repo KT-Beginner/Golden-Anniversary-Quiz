@@ -80,6 +80,23 @@ const questions = [
     },
     { 
     round: "👨‍👩‍👧 Family",
+    question: "Diane once drove off in her Mini. Much to the amusement of passers-by, what had she accidentally left on the roof?",
+   answers: [
+            "A bag of shopping",
+            "A handbag",
+            "A basket bag",
+            "A pair of shoes"
+        ],
+        correct: 2,
+        audio: "audio/bennyhill.mp3",
+         manualNext: true,   
+        image: "images/quiz/mini.jpg", 
+        photoTitle: "🧺 It was still on the roof when Diane arrived",
+        photoText: "She must have been a steady driver! 😄",
+        revealImageAfterAnswer: true
+    },
+     { 
+    round: "👨‍👩‍👧 Family",
     question: "What colour was Andrew's first car?",
    answers: [
             "Green",
@@ -222,17 +239,18 @@ const questions = [
 },
 {
      round: "👨‍👩‍👧 Family",
-    question: "What gas makes up most of the air we breathe?",
+    question: "Approximately how many breaths might a toddler take in an hour?",
     answers: [
-        "Oxygen",
-        "Carbon dioxide",
-        "Hydrogen",
-        "Nitrogen"
+        "300",
+        "600",
+        "1,500",
+        "5,000"
     ],
-    correct: 3,
+    correct: 2,
     image: "images/quiz/lilo.jpg",
-    photoTitle: "🏖️ Inflation was a problem back then too!",
-     revealImageAfterAnswer: true
+    photoTitle: "🏖️ And most of them went into this lilo! 😄",
+    photoText: "Inflation was a problem back then too",
+    revealImageAfterAnswer: true
 },
 {
      round: "👨‍👩‍👧 Family",
@@ -250,6 +268,32 @@ question: "At which University did Laura complete her Master's in Teaching and L
     photoTitle: "🎓 Mastered It!",
     photoText: "📜 A very proud graduation day.",
    showPhotoTitleAfterAnswer: true,
+},
+{
+    round: "👨‍👩‍👧 Family",
+    question: "What does Oscar's middle name Maximo mean in Spanish?",
+
+    image: "images/quiz/oscar.jpg",
+
+    revealImageAfterAnswer: true,
+    revealImage: "images/quiz/oscar2.jpg",
+    
+    answers: [
+        
+        "Greatest",
+        "Brave one",
+        "Beloved one",
+        "Little warrior",
+    ],
+
+    correct: 0,
+    
+    photoTitle: " 🍼 Oscar Maximo Walsh 24 January 2025",
+    
+    showPhotoTitleAfterAnswer: true,
+
+     photoText: "🧸 Welcome to the world Oscar!",
+    
 },  
 {
     round: "👨‍👩‍👧 Family",
@@ -258,7 +302,7 @@ question: "At which University did Laura complete her Master's in Teaching and L
     image: "images/quiz/laura40.jpg",
 
     revealImageAfterAnswer: true,
-    revealImage: "images/quiz/laura40.jpg",
+    revealImage: "images/quiz/laura402.jpg",
     
     answers: [
         
@@ -270,14 +314,34 @@ question: "At which University did Laura complete her Master's in Teaching and L
 
     correct: 2,
     
-    photoTitle: "🎂 Laura's 40th June 2025",
+    photoTitle: "🎂 Laura's 40th, 15th June 2025",
     
     showPhotoTitleAfterAnswer: true,
 
-     photoText: "🍾 Elise wasn't actually there. We've added her to the photo!",
+     photoText: "🍾 Elise wasn't actually there. We added her to the photo!",
     
 },
+{
+    round: "👨‍👩‍👧 Family",
+    question: "Laura's 40th Birthday also coincided with which other occasion?",
 
+    image: "images/quiz/fathersday.jpg",
+   
+    answers: [
+        
+        "Mother's Day",
+        "Father's Day",
+        "Grandparents' Day",
+        "Siblings Day"
+    ],
+
+    correct: 1,
+    
+    photoTitle: "👨 Father's Day, June 2025",
+    
+    showPhotoTitleAfterAnswer: true,
+    
+},
 
     {
         round: "🏖️ Holidays",
@@ -910,74 +974,74 @@ correct: 0,
     round: "🎬 What Happened Next?",
     type: "video",
 
-    question: "🎂 How many puffs did it take Laura to blow out the candles?",
+    question: "How many times did Oscar 'peekaboo'?",
 
-    startImage: "images/quiz/7thbirthdaystill1.jpg",
-    video: "videos/7thbirthday1.mp4",
-    endImage: "images/quiz/7thbirthdaystill2.jpg",
+    startImage: "images/quiz/peekaboo1.jpg",
+    video: "videos/peekaboo1.mp4",
+    endImage: "images/quiz/peekaboo2.jpg",
 
-    revealVideo: "videos/7thbirthday2.mp4",
-    revealImage: "images/quiz/7thbithdaystill3.jpg",
+    revealVideo: "videos/peekaboo2.mp4",
+    revealImage: "images/quiz/peekaboo3.jpg",
 
-    photoTitle: "🎂 🕯️Three puffs",
-    photoText: "🕯️ Hooray. Third time lucky!",
-
+    photoTitle: "🫣 3 times... eventually!",
+    
     answers: [
-        "One",
         "Two",
         "Three",
-        "Four"
+        "Four",
+        "Five"
+    ],
+
+    correct: 1,
+    
+    explanation: "..."
+},
+{
+    round: "🎬 What Happened Next?",
+    
+    question: "What did Oscar do next?",
+
+    startImage: "images/quiz/raspberry1.jpg",
+    revealVideo: "videos/raspberry.mp4",
+    revealImage: "images/quiz/raspberry2.jpg",
+
+    photoTitle: "😮 Well, that's what he thought of that",
+    photoText: "How cheeky! 😂",
+
+    answers: [
+        "He sneezed",
+        "He hiccupped",
+        "He blew a raspberry",
+        "He stuck his tongue out"
     ],
 
     correct: 2,
     
     explanation: "..."
 },
-{
-    round: "🎬 What Happened Next?",
-    type: "video",
 
-    question: "❄️ Who threw the next snowball?",
-
-    startImage: "images/quiz/snowstill1.jpg",
-    video: "videos/snow1.mp4",
-    endImage: "images/quiz/snowstill2.jpg",
-
-    revealVideo: "videos/snow2.mp4",
-    revealImage: "images/quiz/snowstill3.jpg",
-
-    photoTitle: "🧤🧣 It was Lois",
-    photoText: "🐣 Easter 2008 in Chesterfield",
-
-    answers: [
-        "Adam",
-        "Karen",
-        "Laura",
-        "Lois"
-    ],
-
-    correct: 3,
-    
-    explanation: "..."
-},
 {
   round: "🎬 What Happened Next?",
-     question: "What colour teacups did Laura & Lois choose?",
-   
-    image: "images/quiz/teacups.jpg",
-    revealVideo: "videos/teacups.mp4",
-    revealImage: "images/quiz/teacups2.jpg",
+  
+     question: "Also on a raspberry theme.. How many pieces of rasberry did Oscar throw after this clip?",
+     type: "video",
 
-    photoTitle: "🐐 Pettits Animal Adventure Park 2008",
-    photoText: "☕ Mad Hatter's Teacups",
+    startImage: "images/quiz/throwing1.jpg",
+    video: "videos/throwing1.mp4",
+    endImage: "images/quiz/throwing2.jpg",
+
+    revealVideo: "videos/throwing2.mp4",
+    revealImage: "images/quiz/throwing3.jpg",
+    photoTitle: "😒 Not hungry today",
+    photoText: "Gran & Grandad teaching me bad habits! 😂",
 
      answers: [
-        "Pink & Yellow",
-        "Yellow & Green",
-        "Green & Pink",
-        "Both chose Pink"
+        "One",
+        "Two",
+        "Three",
+        "None - he ate them all"
     ],
-    correct: 0,
+    correct: 2,
 
 },
 
