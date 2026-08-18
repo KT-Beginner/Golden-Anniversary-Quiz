@@ -588,7 +588,7 @@ question: "At which University did Laura complete her Master's in Teaching and L
     revealImageAfterAnswer: true,
 
     photoTitle: "🧸 The BBC challenge began in 2011, when Matt Baker rode a rickshaw from Edinburgh to London",  
-    photoText: "🚲 The Ness Family completed the challenge years before",
+    photoText: "🚲 The Ness Family completed their challenge years before",
     showPhotoTitleAfterAnswer: true
 },
 {
