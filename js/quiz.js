@@ -11,7 +11,7 @@ if (sessionStorage.getItem("diamondQuizUnlocked") !== "true") {
 const playerName = localStorage.getItem("playerName") || "Guest";
 
 // Quiz state
-let currentQuestion = 0;
+let currentQuestion = 34;
 let score = 0;
 let currentRound = "";
 let playerAnswers = [];
@@ -117,7 +117,7 @@ const roundInfo = {
     message: "Watch these video clips. Can you guess what happens next?"
 },
     "❤️ Diane and Robert in 2026": {
-        title: "❤️ Final Round – Diane and Robert in 2026",
+        title: "❤️ Final Round – 2026",
         photo: "images/rounds/dianerobert2026.jpg",
         message: "The Anniversary Quiz has nearly reached the end. Just a few more questions left to celebrate an incredible 50 years of love, laughter and memories. Good luck!"
     }

@@ -14,7 +14,7 @@ const questions = [
 
         image: "images/quiz/wedding.jpg",
         photoTitle: "💍 Wedding Day 4th September 1976",
-        photoText: "⛪ St.Thomas Church, Brightside.",
+        photoText: "⛪ St.Thomas Church",
         revealImageAfterAnswer: true
     },
     {
@@ -42,7 +42,7 @@ const questions = [
         ],
         correct: 0,
         image: "images/quiz/bacon.jpg",
-        photoTitle: "💍Kevin Bacon & Kyra Sedgwick married on 4 September 1988",
+        photoTitle: "💍Kevin Bacon & Kyra Sedgwick married on 4th September 1988",
         photoText: "🥂 Diane & Robert got there first!",
         revealImageAfterAnswer: true
     },
@@ -80,7 +80,7 @@ const questions = [
     },
     { 
     round: "👨‍👩‍👧 Family",
-    question: "Diane once drove off in her Mini. Much to the amusement of passers-by, what had she accidentally left on the roof?",
+    question: "Diane once drove off in her Mini. What had she accidentally left on the roof, much to the amusement of passers-by?",
    answers: [
             "A bag of shopping",
             "A handbag",
@@ -266,7 +266,7 @@ question: "At which University did Laura complete her Master's in Teaching and L
     correct: 2,
 
     photoTitle: "🎓 Mastered It!",
-    photoText: "📜 A very proud graduation day.",
+    photoText: "📜 A very proud Graduation Day",
    showPhotoTitleAfterAnswer: true,
 },
 {
@@ -288,7 +288,7 @@ question: "At which University did Laura complete her Master's in Teaching and L
 
     correct: 0,
     
-    photoTitle: " 🍼 Oscar Maximo Walsh 24 January 2025",
+    photoTitle: " 🍼 Oscar Maximo Walsh 24th January 2025",
     
     showPhotoTitleAfterAnswer: true,
 
@@ -363,9 +363,10 @@ question: "At which University did Laura complete her Master's in Teaching and L
     
     photoTitle: "🎅 Ho Ho... NO!",
       
-     photoText: "🎄 11 months old — and still deciding whether Santa could be trusted!",
+     photoText: "🎄 11 months old — and deciding whether Santa could be trusted!",
     
 },
+
     {
         round: "🏖️ Holidays",
     question: "Which famous Venetian landmark can be seen behind Robert and Andrew?",
@@ -385,7 +386,7 @@ question: "At which University did Laura complete her Master's in Teaching and L
 },    
 {
         round: "🏖️ Holidays",
-    question: "In 1920, Which country won the last Olympic tug-of-war gold medal?",
+    question: "In 1920, which country won the last Olympic tug-of-war gold medal?",
     answers: [
         "USA",
         "France",
@@ -431,7 +432,7 @@ question: "At which University did Laura complete her Master's in Teaching and L
 },  
 {
         round: "🏖️ Holidays",
-    question: "Which Japanese company made its first complete motorcycle in 1949",
+    question: "Which Japanese company made its first complete motorcycle in 1949?",
     answers: [
         "Yamaha",
         "Suzuki",
@@ -497,7 +498,7 @@ question: "At which University did Laura complete her Master's in Teaching and L
         "La Palma"
     ],
     correct: 0,
-    photoTitle: "🏖️ Sandblasted on the beach in Fuerteventura",
+    photoTitle: "🏖️ Fuerteventura - sand everywhere!",
     
 },
 
@@ -572,179 +573,23 @@ question: "At which University did Laura complete her Master's in Teaching and L
     photoText: "⚽ Also, Sheffield Wednesday won the League Cup, beating Manchester United 1–0 at Wembley.  Booooo",
     showPhotoTitleAfterAnswer: true
 },  
-{ 
-    round: "📅 Guess the Year",
-    question: "Can you guess which year this is?  Hint: It was the year the Channel Tunnel opened.",
-    image: "images/quiz/1994.jpg",
-    caption: "📸🧀 Smile Kevin - say cheese!",
-    answers: [
-        "1993",
-        "1994",
-        "1995",
-        "1996"
-    ],
-    correct: 1
-},
-{ 
-    round: "📅 Guess the Year",
-    question: "Which year did Kevin and Dawn get married? Hint: Robbie Williams went to number 1 with Millenium in this year.",
-    image: "images/quiz/kevinwedding.jpg",
-    
-    answers: [
-        "1996",
-        "1997",
-        "1998",
-        "1999"
-    ],
-    correct: 2,
-    photoTitle: "🌴 Grenada 1998",
-    photoText: "🍹 Anyone for a rum punch?",
-    
-    showPhotoTitleAfterAnswer: true,
-     audio: "audio/calypso.mp3",    
-         manualNext: true,   
-},
-{ 
-    round: "📅 Guess the Year",
-    question: "Which year is this?",
-    image: "images/quiz/babylois.jpg",
-    caption: "🧸 The youngest member of the family arrives.",
-    answers: [
-        "2002",
-        "2003",
-        "2004",
-        "2005"
-    ],
-    correct: 1,
-    photoTitle: "🍼🧸 Hello Lois!",
-    photoText: "🧸 A second grandchild arrives",
-     showPhotoTitleAfterAnswer: true
-},
-{ 
-    round: "📅 Guess the Year",
-    question: "Which year is this?",
-    image: "images/quiz/boxing-day-2006.jpg",
-    caption: "🎄 Boxing Day with the family",
-
-    
+{
+     round: "📅 Guess the Year",
+        question: "The Children in Need Rickshaw Challenge began in which year?",
+        answers: [
+            "1981",
+            "1991",
+            "2001",
+            "2011"
+        ],
+        correct: 3,
+        
+    image: "images/quiz/rickshaw.jpg",
     revealImageAfterAnswer: true,
-    revealImage: "images/quiz/family2.jpg",
-   
-    
-    answers: [
-        "2004",
-        "2005",
-        "2006",
-        "2007"
-    ],
-    correct: 2
-},
-{
- round: "📅 Guess the Year",
-     question: "Which year is this?",
-   
-    image: "images/quiz/treadmill.jpg",
-    revealVideo: "videos/treadmill1.mp4",
-    revealImage: "images/quiz/treadmill2.jpg",
 
-    photoTitle: "🎉 January 2008",
-    photoText: "🎂 Lois' 5th Birthday",
-
-     answers: [
-        "2005",
-        "2006",
-        "2007",
-        "2008"
-    ],
-    correct: 3,
-
-},
-{
-    round: "📅 Guess the Year",
-    question: "What year was this school photo taken?",
-
-    image: "images/quiz/school.jpg",
-
-    revealImageAfterAnswer: true,
-    revealImage: "images/quiz/schoolanswer.jpg",
-   
-    answers: [
-        
-        "2009",
-        "2010",
-        "2011",
-        "2012"
-    ],
-
-    correct: 2,
-
-     photoTitle: "📷 Calendar girls.",
-    
-},
-{
-    round: "📅 Guess the Year",
-    question: "What year was this photo taken? Hint: It was the year of the London Olympics and the Queen's Diamond Jubilee.",
-
-    image: "images/quiz/2012.jpg",
-
-    answers: [
-        
-        "2011",
-        "2012",
-        "2013",
-        "2014"
-    ],
-
-    correct: 1,
-     photoTitle: "📅 2012",
-     photoText: "🥇 At the 2012 London Olympics Team GB finished third in the medal table winning 65 medals (29 gold, 17 silver, and 19 bronze).",
-     showPhotoTitleAfterAnswer: true,
-},
-{
-    round: "📅 Guess the Year",
-    question: "What year was this day at the races?",
-
-    image: "images/quiz/races.jpg",
-caption: "🧺 Picnic at the racecourse",
-
-    revealImageAfterAnswer: true,
-    revealImage: "images/quiz/races2.jpg",
-    
-    answers: [
-        
-        "2012",
-        "2014",
-        "2016",
-        "2018"
-    ],
-
-    correct: 2,
-    
-    photoTitle: "🍾🥂 July 2016.",
-    showPhotoTitleAfterAnswer: true,
-
-     photoText: "🏇 Celebrating Keith & Anne's Golden Anniversary (50 years together)",
-    
-},
-{
-    round: "📅 Guess the Year",
-    question: "This was Boxing Day in which year? Hint: 👑 The Queen and Prince Philip had celebrated their Diamond Anniversary in November",
-
-    image: "images/quiz/facepaint.jpg",
-    
-    answers: [
-        
-        "2007",
-        "2011",
-        "2014",
-        "2018"
-    ],
-
-    correct: 0,
-    
-    photoTitle: "🐈‍⬛ Auditioning for 'Cats' the Musical",
-    showPhotoTitleAfterAnswer: true,
-    
+    photoTitle: "🧸 The BBC challenge began in 2011, when Matt Baker rode a rickshaw from Edinburgh to London",  
+    photoText: "🚲 The Ness Family completed the challenge years before",
+    showPhotoTitleAfterAnswer: true
 },
 {
  round: "🎵 Music Round",
@@ -805,7 +650,7 @@ caption: "🧺 Picnic at the racecourse",
 },
 {
  round: "🎵 Music Round",
-    question: "And here's one Laura might remember. Who was this band?",
+    question: "Here's one Laura might remember. Who was this band?",
     answers: [
         "Hanson",
         "The Jacksons",
@@ -824,22 +669,24 @@ caption: "🧺 Picnic at the racecourse",
 },
 {
  round: "🎵 Music Round",
-    question: "Taylor Swift's song 'Lover' has become a popular choice for which type of celebration?",
+    question: "And here's one Oscar might bop to. What is the name of the song?",
+     image: "images/quiz/golden.jpg",
     answers: [
-        "Birthday parties",
-        "Graduation ceremonies",
-        "Christmas parties",
-        "Wedding first dances"
+        "Up, Up, Up",
+        "Demon Hunters",
+        "Now I'm Shining",
+        "Golden"
     ],
     correct: 3,
 
-    audioQuestion: "audio/lover-intro.mp3",
-    audioAnswer: "audio/lover-answer.mp3",
-    audioFull: "audio/lover-full.mp3",
-    image: "images/quiz/lover.jpg",
+    audioQuestion: "audio/golden-intro.mp3",
+    revealVideo: "videos/golden.mp4",
+    revealImage: "images/quiz/goldenend.jpg",
+    audioFull: "audio/golden-full.mp3",
+   
     revealImageAfterAnswer: true,
-    photoTitle: "👩‍❤️‍💋‍👨 Taylor Swift – Lover (2019)",
-    photoText: "🎬 'Lover' featured on the soundtrack of the 2022 TV series 'The Summer I Turned Pretty'"
+    photoTitle: "🎵 HUNTR/X – “Golden” (2025)",
+    photoText: "🎬 From the K-pop Demon Hunters animated film. Still a bit scary for Oscar we think!"
 },
 {
     round: "✅ True or False",
@@ -859,7 +706,7 @@ caption: "🧺 Picnic at the racecourse",
 
     correct: 1,
 
-     photoTitle: "🧸 No that was Laura. This is Andrew's baby photo.",
+     photoTitle: "🧸 No it was Laura. This is Andrew's baby photo.",
     photoText: "🍼 Hello Andrew!",
 },
 {
@@ -903,115 +750,7 @@ caption: "🧺 Picnic at the racecourse",
     photoText: " 🕯️ Happy 60th Birthday Diane!",
     
 },
-{
-    round: "✅ True or False",
-    type: "truefalse",
-    question: "Anne & Keith's car in this photo is a Hillman Imp.",
-    answers: [
-        "True",
-        "False"
-    ],
-    correct: 1,
-    image: "images/quiz/anglia.jpg",
-    photoTitle: "🚗 They did own a Hillman Imp, but this is a Ford Anglia",
-    showPhotoTitleAfterAnswer: true
-},
-{
-    round: "✅ True or False",
-    type: "truefalse",
-    question: "In 1982 Keith & Anne owned a green car.",
-    answers: [
-        "True",
-        "False"
-    ],
-correct: 0,
 
-    image: "images/quiz/cortina.jpg",
-    revealImageAfterAnswer: true,
-
-    photoTitle: "🚗 Their dark green Ford Cortina",
-     showPhotoTitleAfterAnswer: true
-},
-{
-    round: "✅ True or False",
-    type: "truefalse",
-
-    question: "Enjoying 'Sundowners' in Kenya in 2016",
-
-    image: "images/quiz/sundowner.jpg",
-
-    answers: [
-        "True",
-        "False"
-    ],
-
-    correct: 1,
-
-    photoTitle: "🐘 No. This safari was in Zimbabwe.",
-    photoText: "🥂 What a way to spend an evening. Cheers!",
-    
-    showPhotoTitleAfterAnswer: true
-},
-   {
-     round: "✅ True or False",
-    type: "truefalse",
-
-    question: "This was Laura's 3rd Birthday",
-
-    image: "images/quiz/laura3cake.jpg",
-
-    revealImageAfterAnswer: true,
-    revealImage: "images/quiz/laura3.jpg",
-   
-    answers: [
-        "True",
-        "False"
-    ],
-
-    correct: 0,
-        
-     photoTitle: "🎁🎈 In the garden at Ramsey 4th September 2004",
-    
-},
-{
-     round: "✅ True or False",
-    type: "truefalse",
-
-    question: "This ancient site is in Peru",
-
-    image: "images/quiz/mexico.jpg",
-
-    revealImageAfterAnswer: true,
-    revealImage: "images/quiz/mexico2.jpg",
-   
-    answers: [
-        "True",
-        "False"
-    ],
-
-    correct: 1,
-        
-    photoTitle: "🌵🏛️ Mexico 2015",
-    photoText: "🚤 They also took a speedboat ride through the Sumidero Canyon.",
-},
-{
-    round: "✅ True or False",
-    type: "truefalse",
-    question: "Anne & Keith visited the Isle of Man in 2019 with Peter & Janet.",
-
-    answers: [
-        "True",
-        "False"
-    ],
-
-    correct: 0,
-
-    image: "images/quiz/man.jpg",
-    revealImageAfterAnswer: true,
-    photoTitle: "Isle of Man 2019",
-    photoText: "🏍️ Anne & Keith on the Isle of Man with Peter & Janet",
-    showPhotoTitleAfterAnswer: true
-},
 {
     round: "🎬 What Happened Next?",
     type: "video",
@@ -1089,44 +828,29 @@ correct: 0,
 
 {
     round: "❤️ Diane and Robert in 2026",
-    question: "🚆 Which famous Swiss train is this?",
-  
-    image: "images/quiz/glacierexpress.jpg",
-  
+    question: "What are Bluey's mum and dad called?",
+
+    image: "images/quiz/bluey.jpg",
+
     revealImageAfterAnswer: true,
-    revealImage: "images/quiz/glacierview.jpg",
-   
+    revealImage: "images/quiz/bluey2.jpg",
+    
     answers: [
-        "Eurostar",
-        "GoldenPass Express",
-        "Bernina Express",
-        "Glacier Express"
-    ],
-
-    correct: 3,
-
-    photoTitle: "🚞 Views from the Glacier Express",
         
-},
-{
-   round: "❤️ Diane and Robert in 2026",
-    question: "🚆 Which mountain did Keith & Anne 'climb' on 28th July 2026?",
-  
-    image: "images/quiz/matterhorn.jpg",
-  
-        answers: [
-        "Eiger",
-        "Jungfrau",
-        "Matterhorn",
-        "Mont Blanc"
+        "Coco & Rusty",
+        "Laura & Matthew ",
+        "Chilli & Bandit",  
+        "Diane & Robert",
     ],
 
     correct: 2,
-
-   photoTitle: "🏔️ The Matterhorn – climbed by train!",
-    photoText: "🚂 The famous Gornergrat Railway took them to one of Switzerland's most spectacular viewpoints.",
-     showPhotoTitleAfterAnswer: true,    
+    
+    photoTitle: "🐾 For Real Life!",
+      
+     photoText: "💙 Bluey bringing the generations together",
+    
 },
+
  {
     round: "❤️ Diane and Robert in 2026",
     question: "❤️ On 4th September 2026, how many days had Diane & Robert been married? (You may use a calculator!)",
