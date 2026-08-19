@@ -28,7 +28,7 @@ const questions = [
         ],
         correct: 2,
         image: "images/quiz/certificate.jpg",
-        photoTitle: "💍 Wedding Record",
+        photoTitle: "💍 Wedding Record on sheffieldindexers.com",
         revealImageAfterAnswer: true
     },
     {
@@ -92,7 +92,7 @@ const questions = [
          manualNext: true,   
         image: "images/quiz/mini.jpg", 
         photoTitle: "🧺 It was still on the roof when Diane arrived",
-        photoText: "She must have been a steady driver! 😄",
+        photoText: "She must be a steady driver! 😄",
         revealImageAfterAnswer: true
     },
      { 
@@ -170,37 +170,7 @@ const questions = [
 
      photoTitle: "🦴 Pepper Ness",
 },
- { 
-    round: "👨‍👩‍👧 Family",
-    question: "Which song from Kylie Minogue's debut album reached number one in the UK in 1988?",
-   answers: [
-            "The Loco-Motion",
-            "Got to Be Certain",
-            "Je ne sais pas pourquoi",
-            "I Should Be So Lucky"
-        ],
-        correct: 3,
-        image: "images/quiz/kylie.jpg", 
-        photoTitle: "🎶 I Should Be So Lucky spent 5 weeks at number one.",
-        photoText: "The 3 other songs peaked at number two",
-        revealImageAfterAnswer: true
-    },
-{ 
-    round: "👨‍👩‍👧 Family",
-    question: "What nautical term means the left-hand side of a boat when facing forwards?",
-   answers: [
-            "Starboard",
-            "Port",
-            "Bow",
-            "Stern"
-        ],
-        correct: 1,
-        image: "images/quiz/boat.jpg", 
-        photoTitle: "🚣 Ahoy, shipmates!",
-        revealImageAfterAnswer: true
-    },
-
-
+ 
 { 
     round: "👨‍👩‍👧 Family",
     question: "Which actor played Batman in the 1989 film Batman?",
@@ -353,8 +323,8 @@ question: "At which University did Laura complete her Master's in Teaching and L
     
     answers: [
         
-        "A Christmas elf",
-        "A snowman",
+        "A Christmas Elf",
+        "A Snowman",
         "Santa",  
         "Rudolph",
     ],
@@ -396,8 +366,8 @@ question: "At which University did Laura complete her Master's in Teaching and L
     correct: 3,
     image: "images/quiz/tug.jpg",
 
-    photoTitle: "🏅 Andrew and Robert going for gold",
-    photoText: "Tug-of-war was an event at five Olympic Games between 1900 and 1920.",
+    photoTitle: "🏅 Andrew and Robert going for Gold",
+    photoText: "Tug-of-war was an event at five Olympic Games between 1900 and 1920",
     revealImageAfterAnswer: true
 },  
 {
@@ -411,7 +381,7 @@ question: "At which University did Laura complete her Master's in Teaching and L
     ],
     correct: 1,
     image: "images/quiz/pedalo.jpg",
-    photoTitle: "🚤 Pedal Power!",
+    photoTitle: "🚤 Pedal Power in Ibiza ",
     revealImageAfterAnswer: true
 },  
 {
@@ -442,7 +412,7 @@ question: "At which University did Laura complete her Master's in Teaching and L
     correct: 3,
     image: "images/quiz/honda.jpg",
     photoTitle: "🏍️ Born to be Wild!",
-    photoText: "Andrew aged 5.",
+    photoText: "Andrew aged 5",
     revealImageAfterAnswer: true
 },  
 {
@@ -518,7 +488,7 @@ question: "At which University did Laura complete her Master's in Teaching and L
     correct: 1,
     audio: "audio/muppets.mp3",
          manualNext: true,   
-   photoTitle: "🌴Morocco, September 2025",
+   photoTitle: "🌴Morocco September 2025",
     photoText: "🥁 AN-I-MAL! AN-I-MAL!",
 },
 { 
@@ -540,6 +510,24 @@ question: "At which University did Laura complete her Master's in Teaching and L
 },
 { 
     round: "📅 Guess the Year",
+    question: "Which year did Kylie Minogue's song 'I Should Be So Lucky' reach number 1 in the UK?",
+    image: "images/quiz/kyliealbum.jpg",
+     revealImageAfterAnswer: true,
+    revealImage: "images/quiz/kylie.jpg",
+   answers: [
+            "1987",
+            "1988",
+            "1989",
+            "1990"
+        ],
+        correct: 1,
+        photoTitle: "🩷 'Step Back in Time'… when Kylie hats were essential fashion", 
+                
+        revealImageAfterAnswer: true
+    },
+
+{ 
+    round: "📅 Guess the Year",
     question: "Sky Television launched in the UK the same year as this holiday. Can you remember when?",
     image: "images/quiz/pollensa1.jpg",
      revealImageAfterAnswer: true,
@@ -557,17 +545,18 @@ question: "At which University did Laura complete her Master's in Teaching and L
 },
 {
      round: "📅 Guess the Year",
-        question: "In which year did Diane & Robert celebrate their 'Crystal' wedding anniversary?",
+        question: "In which year did Diane & Robert celebrate their 'Ruby' wedding anniversary?",
+         image: "images/quiz/ruby.jpg",
+     revealImageAfterAnswer: true,
+    revealImage: "images/quiz/olympicteam.jpg",
         answers: [
-            "1981",
-            "1986",
-            "1991",
-            "1996"
+            "2006",
+            "2011",
+            "2016",
+            "2021"
         ],
         correct: 2,
         
-    image: "images/quiz/sonic.jpg",
-    revealImageAfterAnswer: true,
 
     photoTitle: "🎮 Sonic the Hedgehog made his first appearance in 1991",  
     photoText: "🌐 Also, The World Wide Web became publicly accessible",
@@ -688,7 +677,7 @@ question: "At which University did Laura complete her Master's in Teaching and L
 },
 {
  round: "🎵 Music Round",
-    question: "And here's one Oscar might bop to. What is the name of the song?",
+    question: "And here's one Oscar MMMight bop to. What is the name of the song?",
      image: "images/quiz/golden.jpg",
     answers: [
         "Up, Up, Up",
@@ -711,7 +700,7 @@ question: "At which University did Laura complete her Master's in Teaching and L
     round: "✅ True or False",
     type: "truefalse",
 
-    question: "This baby is Andrew.",
+    question: "This baby is Andrew",
 
     image: "images/quiz/babylaura.jpg",
 
@@ -725,9 +714,26 @@ question: "At which University did Laura complete her Master's in Teaching and L
 
     correct: 1,
 
-     photoTitle: "🧸 No it was Laura. This is Andrew's baby photo.",
+     photoTitle: "🧸 No it was Laura. This is Andrew's baby photo",
     photoText: "🍼 Hello Andrew!",
 },
+{ 
+    round: "✅ True or False",
+    type: "truefalse",
+
+    question: "The nautical term 'Starboard' means the left-hand side of a boat when facing forwards",
+   answers: [
+            "True",
+            "False"
+        ],
+        correct: 1,
+        image: "images/quiz/boat.jpg", 
+        photoTitle: "🚣 Ahoy, shipmates!  Port is left",
+        photoText: " 🦆 🦆 'We’re just trying not to hit the ducks!'",
+        revealImageAfterAnswer: true
+    },
+
+
 {
         round: "✅ True or False",
         type: "truefalse",
@@ -823,7 +829,7 @@ question: "At which University did Laura complete her Master's in Teaching and L
 {
   round: "🎬 What Happened Next?",
   
-     question: "Also on a raspberry theme.. How many pieces of rasberry did Oscar throw after this clip?",
+     question: "Also on a raspberry theme.. How many pieces of raspberry did Oscar throw after this clip?",
      type: "video",
 
     startImage: "images/quiz/throwing1.jpg",
@@ -874,6 +880,7 @@ question: "At which University did Laura complete her Master's in Teaching and L
     question: "Which Spanish sports personality was born in Mallorca?",
 
     image: "images/quiz/mallorcacartoon.jpg",
+    caption: "🏖️ Mallorca family holiday 2026",
 
     revealImageAfterAnswer: true,
     revealImage: "images/quiz/nadal.jpg",
@@ -912,7 +919,7 @@ question: "At which University did Laura complete her Master's in Teaching and L
 
     correct: 2,
     
-    photoTitle: "👟 Little feet, big milestone — my first Clarks",
+    photoTitle: "👟 Little feet, big milestone — My first Clarks",
       
      photoText: "New shoes, new adventures!",
     
@@ -922,6 +929,9 @@ question: "At which University did Laura complete her Master's in Teaching and L
     question: "❤️ On 4th September 2026, how many days have Diane & Robert been married? (You may use a calculator!)",
   
     image: "images/quiz/dianerobert.jpg",  
+    
+    revealImageAfterAnswer: true,
+    revealImage: "images/quiz/anniversarytoast.jpg",
   
     answers: [
         "18,250 days",

@@ -11,7 +11,7 @@ if (sessionStorage.getItem("diamondQuizUnlocked") !== "true") {
 const playerName = localStorage.getItem("playerName") || "Guest";
 
 // Quiz state
-let currentQuestion = 13;
+let currentQuestion = 27;
 let score = 0;
 let currentRound = "";
 let playerAnswers = [];
@@ -93,7 +93,7 @@ const roundInfo = {
     "🏖️ Holidays": {
         title: "🏖️ Round 3 – Holidays",
         photo: "images/rounds/holidays.jpg",
-        message: "Suitcases packed! Let's revisit some of Diane and Robert's favourite holidays and adventures over the years."
+        message: "Suitcases packed! Let's revisit some of Diane and Robert's holidays and adventures over the years."
     },
 
     "📅 Guess the Year": {
