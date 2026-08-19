@@ -566,11 +566,11 @@ question: "At which University did Laura complete her Master's in Teaching and L
         ],
         correct: 2,
         
-    image: "images/quiz/web.jpg",
+    image: "images/quiz/sonic.jpg",
     revealImageAfterAnswer: true,
 
-    photoTitle: "🌐 The World Wide Web became publicly accessible in 1991",  
-    photoText: "⚽ Also, Sheffield Wednesday won the League Cup, beating Manchester United 1–0 at Wembley.  Booooo",
+    photoTitle: "🎮 Sonic the Hedgehog made his first appearance in 1991",  
+    photoText: "🌐 Also, The World Wide Web became publicly accessible",
     showPhotoTitleAfterAnswer: true
 },  
 {
@@ -647,6 +647,25 @@ question: "At which University did Laura complete her Master's in Teaching and L
     revealImageAfterAnswer: true,
     photoTitle: "🍿 Back to the Future, 1985",
     photoText: "🎬 Huey Lewis himself appears as the school audition judge who rejects the band for being 'too darn loud!'"
+},
+{
+ round: "🎵 Music Round",
+    question: "This song spent 15 consecutive weeks at No. 1 in the UK after featuring on the soundtrack of which Hugh Grant film?",
+    answers: [
+        "Notting Hill",
+        "Four Weddings and a Funeral",
+        "Bridget Jones’s Diary",
+        "Love Actually"
+    ],
+    correct: 1,
+
+    audioQuestion: "audio/wetwetwet-intro.mp3",
+    audioAnswer: "audio/wetwetwet-answer.mp3",
+    audioFull: "audio/loveisallaroundmix.mp3",
+    image: "images/quiz/4weddings.jpg",
+    revealImageAfterAnswer: true,
+    photoTitle: "Wet Wet Wet's biggest hit",
+    photoText: "First recorded by the Troggs and later parodied by Bill Nighy in Love Actually.  Play Full Clip to hear them all"
 },
 {
  round: "🎵 Music Round",
@@ -838,7 +857,7 @@ question: "At which University did Laura complete her Master's in Teaching and L
     answers: [
         
         "Coco & Rusty",
-        "Laura & Matthew ",
+        "Laura & Matthew",
         "Chilli & Bandit",  
         "Diane & Robert",
     ],
@@ -850,10 +869,57 @@ question: "At which University did Laura complete her Master's in Teaching and L
      photoText: "💙 Bluey bringing the generations together",
     
 },
+{
+    round: "❤️ Diane and Robert in 2026",
+    question: "Which Spanish sports personality was born in Mallorca?",
 
+    image: "images/quiz/mallorcacartoon.jpg",
+
+    revealImageAfterAnswer: true,
+    revealImage: "images/quiz/nadal.jpg",
+    
+    answers: [
+        
+        "Seve Ballesteros",
+        "Carlos Alcaraz",
+        "Fernando Alonso",  
+        "Rafael Nadal",
+    ],
+
+    correct: 3,
+    
+    photoTitle: "🎾 Tennis star Rafael Nadal was born in Manacor, Mallorca, in 1986",
+      
+     photoText: "😄 Rafa had his work cut out with this lot!",
+    
+},
+{
+    round: "❤️ Diane and Robert in 2026",
+    question: "Generations of children have had their feet measured in Clarks — but when was the famous Clarks children's foot-measuring gauge introduced?",
+
+    image: "images/quiz/firstshoes.jpg",
+
+    revealImageAfterAnswer: true,
+    revealImage: "images/quiz/firstshoes2.jpg",
+    
+    answers: [
+        
+        "1925",
+        "1935",
+        "1945",  
+        "1955",
+    ],
+
+    correct: 2,
+    
+    photoTitle: "👟 Little feet, big milestone — my first Clarks",
+      
+     photoText: "New shoes, new adventures!",
+    
+},
  {
     round: "❤️ Diane and Robert in 2026",
-    question: "❤️ On 4th September 2026, how many days had Diane & Robert been married? (You may use a calculator!)",
+    question: "❤️ On 4th September 2026, how many days have Diane & Robert been married? (You may use a calculator!)",
   
     image: "images/quiz/dianerobert.jpg",  
   
