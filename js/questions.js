@@ -64,7 +64,7 @@ const questions = [
         round: "💍 Wedding Day",
         question: "Which song was at Number 1 in the UK charts on 4th September 1976?",
         answers: [
-            "Dancing Queen – Abba",
+            "Dancing Queen – ABBA",
             "Mull Of Kintyre – Wings",
             "Bohemian Rhapsody – Queen",
             "Under The Moon Of Love – Showaddywaddy"
@@ -75,8 +75,8 @@ const questions = [
 
     image: "images/quiz/dancingqueen.jpg",
     revealImageAfterAnswer: true,
-    photoTitle: "🎵 Dancing Queen",
-    photoText: "This was ABBA's 4th Number 1 single in the UK. It was also the 1st single to be released from their 4th studio album, 'Arrival'.",
+    photoTitle: "🎵 Dancing Queen - ABBA were famous for their extravagant costumes",
+    photoText: "Swedish law meant costumes could be deducted against tax so long as they were so outrageous they could not possibly be worn on the street",
     },
     { 
     round: "👨‍👩‍👧 Family",
@@ -174,6 +174,12 @@ const questions = [
 { 
     round: "👨‍👩‍👧 Family",
     question: "Which actor played Batman in the 1989 film Batman?",
+    
+     image: "images/quiz/dellboy.jpg",
+
+    revealImageAfterAnswer: true,
+    revealImage: "images/quiz/batman.jpg",
+
    answers: [
             "Michael Keaton",
             "Christian Bale",
@@ -181,9 +187,9 @@ const questions = [
             "Val Kilmer"
         ],
         correct: 0,
-        image: "images/quiz/batman.jpg", 
+         
         photoTitle: "🦇 The Dynamic Duo!",
-        revealImageAfterAnswer: true
+        
     },
 
 
@@ -210,6 +216,9 @@ const questions = [
 {
      round: "👨‍👩‍👧 Family",
     question: "Approximately how many breaths might a toddler take in an hour?",
+     image: "images/quiz/toddler.jpg",
+    revealImage: "images/quiz/lilo.jpg",
+    revealImageAfterAnswer: true,
     answers: [
         "300",
         "600",
@@ -217,10 +226,10 @@ const questions = [
         "5,000"
     ],
     correct: 2,
-    image: "images/quiz/lilo.jpg",
+    
     photoTitle: "🏖️ And most of them went into this lilo! 😄",
     photoText: "Inflation was a problem back then too",
-    revealImageAfterAnswer: true
+    
 },
 {
      round: "👨‍👩‍👧 Family",
@@ -357,6 +366,10 @@ question: "At which University did Laura complete her Master's in Teaching and L
 {
         round: "🏖️ Holidays",
     question: "In 1920, which country won the last Olympic tug-of-war gold medal?",
+    image: "images/quiz/1920rings.jpg",
+    revealImage: "images/quiz/tug.jpg",
+    revealImageAfterAnswer: true,
+
     answers: [
         "USA",
         "France",
@@ -364,29 +377,36 @@ question: "At which University did Laura complete her Master's in Teaching and L
         "Great Britain"
     ],
     correct: 3,
-    image: "images/quiz/tug.jpg",
+    
 
     photoTitle: "🏅 Andrew and Robert going for Gold",
     photoText: "Tug-of-war was an event at five Olympic Games between 1900 and 1920",
-    revealImageAfterAnswer: true
+   
 },  
 {
         round: "🏖️ Holidays",
     question: "How is a traditional pedalo powered?",
+    image: "images/quiz/pedalohire.jpg",
+revealImage: "images/quiz/pedalo.jpg",
+ revealImageAfterAnswer: true,
+
     answers: [
         "A small motor",
-        "Pedals turned by the passengers",
+        "Foot pedals",
         "Wind power",
         "Hand-operated paddles"
     ],
     correct: 1,
-    image: "images/quiz/pedalo.jpg",
+    
     photoTitle: "🚤 Pedal Power in Ibiza ",
-    revealImageAfterAnswer: true
+    
 },  
 {
         round: "🏖️ Holidays",
     question: "What is guaranteed on a British caravan holiday?",
+image: "images/quiz/eastcoast.jpg",
+revealImage: "images/quiz/caravan.jpg",
+ revealImageAfterAnswer: true,
 
     answers: [
         "Wall-to-wall sunshine",
@@ -395,14 +415,19 @@ question: "At which University did Laura complete her Master's in Teaching and L
         "An empty beach"
         ],
         correct: 2,
-    image: "images/quiz/caravan.jpg",
+    
     photoTitle: "🌞 It usually rains",
     photoText: "But not today!",
-    revealImageAfterAnswer: true
+   
 },  
 {
         round: "🏖️ Holidays",
     question: "Which Japanese company made its first complete motorcycle in 1949?",
+image: "images/quiz/vintagehonda.jpg",
+revealImage: "images/quiz/honda.jpg",
+ revealImageAfterAnswer: true,
+
+
     answers: [
         "Yamaha",
         "Suzuki",
@@ -410,10 +435,10 @@ question: "At which University did Laura complete her Master's in Teaching and L
         "Honda"
     ],
     correct: 3,
-    image: "images/quiz/honda.jpg",
+    
     photoTitle: "🏍️ Born to be Wild!",
     photoText: "Andrew aged 5",
-    revealImageAfterAnswer: true
+    
 },  
 {
         round: "🏖️ Holidays",
@@ -558,13 +583,17 @@ question: "At which University did Laura complete her Master's in Teaching and L
         correct: 2,
         
 
-    photoTitle: "🎮 Sonic the Hedgehog made his first appearance in 1991",  
-    photoText: "🌐 Also, The World Wide Web became publicly accessible",
+    photoTitle: "🥇  Serving Up a Golden Summer! 2016",  
+    photoText: "🎾 Andy Murray lifted the Wimbledon trophy and struck gold in Rio, as Team GB celebrated an incredible 67 Olympic medals",
     showPhotoTitleAfterAnswer: true
 },  
 {
      round: "📅 Guess the Year",
         question: "The Children in Need Rickshaw Challenge began in which year?",
+         image: "images/quiz/pudsey.jpg",
+     revealImageAfterAnswer: true,
+    revealImage: "images/quiz/rickshaw.jpg",
+
         answers: [
             "1981",
             "1991",
@@ -573,9 +602,6 @@ question: "At which University did Laura complete her Master's in Teaching and L
         ],
         correct: 3,
         
-    image: "images/quiz/rickshaw.jpg",
-    revealImageAfterAnswer: true,
-
     photoTitle: "🧸 The BBC challenge began in 2011, when Matt Baker rode a rickshaw from Edinburgh to London",  
     photoText: "🚲 The Ness Family completed their challenge years before",
     showPhotoTitleAfterAnswer: true
@@ -722,15 +748,21 @@ question: "At which University did Laura complete her Master's in Teaching and L
     type: "truefalse",
 
     question: "The nautical term 'Starboard' means the left-hand side of a boat when facing forwards",
+
+    image: "images/quiz/port.jpg",
+
+    revealImageAfterAnswer: true,
+    revealImage: "images/quiz/boat.jpg",
+
    answers: [
             "True",
             "False"
         ],
         correct: 1,
-        image: "images/quiz/boat.jpg", 
+       
         photoTitle: "🚣 Ahoy, shipmates!  Port is left",
         photoText: " 🦆 🦆 'We’re just trying not to hit the ducks!'",
-        revealImageAfterAnswer: true
+        
     },
 
 

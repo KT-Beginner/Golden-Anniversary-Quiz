@@ -11,7 +11,7 @@ if (sessionStorage.getItem("diamondQuizUnlocked") !== "true") {
 const playerName = localStorage.getItem("playerName") || "Guest";
 
 // Quiz state
-let currentQuestion = 27;
+let currentQuestion = 0;
 let score = 0;
 let currentRound = "";
 let playerAnswers = [];
@@ -99,7 +99,7 @@ const roundInfo = {
     "📅 Guess the Year": {
         title: "📅 Round 4 – Guess the Year",
         photo: "images/rounds/year.jpg",
-        message: "Can you remember when these special moments happened? Let's put your memory to the test!"
+        message: "Can you remember when? Let's put your memory to the test!"
     },
 "🎵 Music Round": {
     title: "🎵 Round 5 – Music Round",

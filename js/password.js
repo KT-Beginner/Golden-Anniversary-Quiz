@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const passwordSubmit = document.getElementById("passwordSubmit");
     const passwordMessage = document.getElementById("passwordMessage");
 
-    const quizPassword = "dnomaid";
+    const quizPassword = "nedlog";
 
     function unlockQuiz() {
         const enteredPassword = passwordInput.value.trim();
