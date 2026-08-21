@@ -114,7 +114,7 @@ const roundInfo = {
 "🎬 What Happened Next?": { 
     title: "🎬 Round 7 – What Happened Next?",
     photo: "images/rounds/whatnext.jpg",
-    message: "Watch these video clips. Can you guess what happens next?"
+    message: "Can you guess what happens next?"
 },
     "❤️ Diane and Robert in 2026": {
         title: "❤️ Final Round – 2026",

@@ -2,6 +2,10 @@ const questions = [
     {
         round: "💍 Wedding Day",
         question: "What year did Diane and Robert get married?",
+
+    image: "images/quiz/weddingday2.jpg",
+    revealImage: "images/quiz/wedding.jpg",
+    revealImageAfterAnswer: true,
         answers: [
             "1975",
             "1976",
@@ -12,14 +16,20 @@ const questions = [
         audio: "audio/bells.mp3",
          manualNext: true,   
 
-        image: "images/quiz/wedding.jpg",
+        
         photoTitle: "💍 Wedding Day 4th September 1976",
         photoText: "⛪ St.Thomas Church",
-        revealImageAfterAnswer: true
+
+        
     },
     {
         round: "💍 Wedding Day",
         question: "How old were the Happy Couple on their wedding day?",
+
+        image: "images/quiz/happycouple.jpg",
+        revealImage: "images/quiz/certificate.jpg",
+        revealImageAfterAnswer: true,
+
         answers: [
             "Robert was 20 and Diane was 21",
             "Robert was 22 and Diane was 21",
@@ -27,13 +37,18 @@ const questions = [
             "Robert was 23 and Diane was 24"
         ],
         correct: 2,
-        image: "images/quiz/certificate.jpg",
+       
         photoTitle: "💍 Wedding Record on sheffieldindexers.com",
-        revealImageAfterAnswer: true
+       
     },
     {
         round: "💍 Wedding Day",
-        question: "Which of these celebrity couples share Diane & Robert’s wedding anniversary of 4th September?",
+        question: "Which of these celebrity couples share Diane & Robert’s Wedding Anniversary of 4th September?",
+
+         image: "images/quiz/bacon1.jpg",
+        revealImage: "images/quiz/bacon.jpg",
+        revealImageAfterAnswer: true,
+
         answers: [
             "Kevin Bacon & Kyra Sedgwick",
             "David Beckham & Victoria Adams",
@@ -41,14 +56,19 @@ const questions = [
             "Paul McCartney & Linda Eastman"
         ],
         correct: 0,
-        image: "images/quiz/bacon.jpg",
+        
         photoTitle: "💍Kevin Bacon & Kyra Sedgwick married on 4th September 1988",
         photoText: "🥂 Diane & Robert got there first!",
-        revealImageAfterAnswer: true
+        
     },
     {
         round: "💍 Wedding Day",
         question: "While Diane & Robert were getting married, Sheffield United were playing Southampton. What was the final score?",
+       
+        image: "images/quiz/programme.jpg",
+        revealImage: "images/quiz/united.jpg",
+        revealImageAfterAnswer: true,
+       
         answers: [
             "Southampton 2–0 Sheffield United",
             "Southampton 1–1 Sheffield United",
@@ -56,13 +76,18 @@ const questions = [
             "Southampton 2–2 Sheffield United"
         ],
         correct: 1,
-        image: "images/quiz/united.jpg",
+        
         photoTitle: "⚽ A point for the Blades — and a perfect match for Diane & Robert! 🥂",
-        revealImageAfterAnswer: true
+        
     },
     {
         round: "💍 Wedding Day",
         question: "Which song was at Number 1 in the UK charts on 4th September 1976?",
+
+        image: "images/quiz/pops1.jpg",
+        revealImage: "images/quiz/dancingqueen.jpg",
+        revealImageAfterAnswer: true,
+
         answers: [
             "Dancing Queen – ABBA",
             "Mull Of Kintyre – Wings",
@@ -73,15 +98,19 @@ const questions = [
         audio: "audio/dancingqueen.mp3",
          manualNext: true,   
 
-    image: "images/quiz/dancingqueen.jpg",
-    revealImageAfterAnswer: true,
+    
     photoTitle: "🎵 Dancing Queen - ABBA were famous for their extravagant costumes",
     photoText: "Swedish law meant costumes could be deducted against tax so long as they were so outrageous they could not possibly be worn on the street",
     },
     { 
     round: "👨‍👩‍👧 Family",
     question: "Diane once drove off in her Mini. What had she accidentally left on the roof, much to the amusement of passers-by?",
-   answers: [
+   
+    image: "images/quiz/mini1.jpg",
+        revealImage: "images/quiz/mini.jpg",
+        revealImageAfterAnswer: true,
+   
+    answers: [
             "A bag of shopping",
             "A handbag",
             "A basket bag",
@@ -90,14 +119,19 @@ const questions = [
         correct: 2,
         audio: "audio/bennyhill.mp3",
          manualNext: true,   
-        image: "images/quiz/mini.jpg", 
+         
         photoTitle: "🧺 It was still on the roof when Diane arrived",
         photoText: "She must be a steady driver! 😄",
-        revealImageAfterAnswer: true
+        
     },
      { 
     round: "👨‍👩‍👧 Family",
     question: "What colour was Andrew's first car?",
+
+    image: "images/quiz/lplate.jpg",
+        revealImage: "images/quiz/andrewcar.jpg",
+        revealImageAfterAnswer: true,
+
    answers: [
             "Green",
             "White",
@@ -105,10 +139,10 @@ const questions = [
             "Red"
         ],
         correct: 3,
-        image: "images/quiz/andrewcar.jpg", 
+         
         photoTitle: "🚗 Andrew's Red Car Registration : TOY11",
         photoText: "Watch out, Lewis Hamilton!",
-        revealImageAfterAnswer: true
+        
     },
 {
     round: "👨‍👩‍👧 Family",
@@ -570,7 +604,7 @@ revealImage: "images/quiz/honda.jpg",
 },
 {
      round: "📅 Guess the Year",
-        question: "In which year did Diane & Robert celebrate their 'Ruby' wedding anniversary?",
+        question: "In which year did Diane & Robert celebrate their 'Ruby' Wedding Anniversary?",
          image: "images/quiz/ruby.jpg",
      revealImageAfterAnswer: true,
     revealImage: "images/quiz/olympicteam.jpg",
@@ -609,6 +643,8 @@ revealImage: "images/quiz/honda.jpg",
 {
  round: "🎵 Music Round",
     question: "'How Deep Is Your Love' by the Bee Gees featured on the soundtrack of which famous 1977 film?",
+     image: "images/quiz/record.jpg",
+     
     answers: [
         "Grease",
         "Footloose",
@@ -620,7 +656,7 @@ revealImage: "images/quiz/honda.jpg",
     audioQuestion: "audio/beegees-intro.mp3",
     audioAnswer: "audio/beegees-answer.mp3",
     audioFull: "audio/beegees-full.mp3",
-    image: "images/quiz/beegees.jpg",
+    revealImage: "images/quiz/beegees.jpg",
     revealImageAfterAnswer: true,
     photoTitle: "🎤 How Deep Is Your Love",
     photoText: "This became one of the Bee Gees' biggest hits."
@@ -628,6 +664,7 @@ revealImage: "images/quiz/honda.jpg",
 {
  round: "🎵 Music Round",
     question: "This song from 1983 is particularly appropriate for the quiz.  What was the band?",
+     image: "images/quiz/record80.jpg",
     answers: [
         "Duran Duran",
         "ABC",
@@ -639,7 +676,7 @@ revealImage: "images/quiz/honda.jpg",
     audioQuestion: "audio/gold-intro.mp3",
     audioAnswer: "audio/gold-answer.mp3",
     audioFull: "audio/gold-full.mp3",
-    image: "images/quiz/gold.jpg",
+    revealImage: "images/quiz/gold.jpg",
     revealImageAfterAnswer: true,
     photoTitle: "🎤 Spandau Ballet - Gold",
     photoText: "🎬 Gary Kemp has said that when he wrote “Gold” he was trying to write something like a James Bond theme"
@@ -647,6 +684,7 @@ revealImage: "images/quiz/honda.jpg",
 {
  round: "🎵 Music Round",
     question: "This song by Huey Lewis & The News was the theme song from which blockbuster film from the year Laura was born?",
+     image: "images/quiz/popcorn.jpg",
     answers: [
         "Ghostbusters",
         "Top Gun",
@@ -658,7 +696,7 @@ revealImage: "images/quiz/honda.jpg",
     audioQuestion: "audio/poweroflove-intro.mp3",
     audioAnswer: "audio/poweroflove-answer.mp3",
     audioFull: "audio/poweroflove-full.mp3",
-    image: "images/quiz/poweroflove.jpg",
+    revealImage: "images/quiz/poweroflove.jpg",
     revealImageAfterAnswer: true,
     photoTitle: "🍿 Back to the Future, 1985",
     photoText: "🎬 Huey Lewis himself appears as the school audition judge who rejects the band for being 'too darn loud!'"
@@ -666,6 +704,8 @@ revealImage: "images/quiz/honda.jpg",
 {
  round: "🎵 Music Round",
     question: "This song spent 15 consecutive weeks at No. 1 in the UK after featuring on the soundtrack of which Hugh Grant film?",
+    image: "images/quiz/clapperboard.jpg",   
+   
     answers: [
         "Notting Hill",
         "Four Weddings and a Funeral",
@@ -677,7 +717,7 @@ revealImage: "images/quiz/honda.jpg",
     audioQuestion: "audio/wetwetwet-intro.mp3",
     audioAnswer: "audio/wetwetwet-answer.mp3",
     audioFull: "audio/loveisallaroundmix.mp3",
-    image: "images/quiz/4weddings.jpg",
+    revealImage: "images/quiz/4weddings.jpg",
     revealImageAfterAnswer: true,
     photoTitle: "Wet Wet Wet's biggest hit",
     photoText: "First recorded by the Troggs and later parodied by Bill Nighy in Love Actually.  Play Full Clip to hear them all"
@@ -685,6 +725,7 @@ revealImage: "images/quiz/honda.jpg",
 {
  round: "🎵 Music Round",
     question: "Here's one Laura might remember. Who was this band?",
+     image: "images/quiz/cd.jpg",   
     answers: [
         "Hanson",
         "The Jacksons",
@@ -696,7 +737,7 @@ revealImage: "images/quiz/honda.jpg",
     audioQuestion: "audio/mmmbop-intro.mp3",
     audioAnswer: "audio/mmmbop-answer.mp3",
     audioFull: "audio/mmmbop-full.mp3",
-    image: "images/quiz/hanson.jpg",
+    revealImage: "images/quiz/hanson.jpg",
     revealImageAfterAnswer: true,
     photoTitle: "🎵 MMMBop.  In 1997 Hanson became the youngest group ever to have a UK No.1 album",
     photoText: "🎸 Isaac, Taylor & Zac Hanson still perform together today"
@@ -956,6 +997,32 @@ revealImage: "images/quiz/honda.jpg",
      photoText: "New shoes, new adventures!",
     
 },
+{
+    round: "❤️ Diane and Robert in 2026",
+    question: "Apart from the Ness and Walsh families, what might you find at Clumber Park?",
+
+    image: "images/quiz/clumber.jpg",
+    caption: "The Ornamental Bridge at Clumber Park",
+
+    revealImageAfterAnswer: true,
+    revealImage: "images/quiz/rhubarb.jpg",
+    
+    answers: [
+        
+        "The National Lavender Collection",
+        "The National Rose Collection",
+        "The National Gooseberry Collection",  
+        "The National Rhubarb Collection",
+    ],
+
+    correct: 3,
+    
+    photoTitle: "🌱 The National Rhubarb Collection in Clumber Park's Walled Kitchen Garden grows more than 130 varieties",
+      
+     photoText: "🍎 Clumber also has a national collection of apples",
+    
+},
+
  {
     round: "❤️ Diane and Robert in 2026",
     question: "❤️ On 4th September 2026, how many days have Diane & Robert been married? (You may use a calculator!)",
