@@ -38,7 +38,7 @@ const questions = [
         ],
         correct: 2,
        
-        photoTitle: "💍 Wedding Record on sheffieldindexers.com",
+        photoTitle: "💍 Wedding Record",
        
     },
     {
