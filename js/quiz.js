@@ -11,7 +11,7 @@ if (sessionStorage.getItem("diamondQuizUnlocked") !== "true") {
 const playerName = localStorage.getItem("playerName") || "Guest";
 
 // Quiz state
-let currentQuestion = 0;
+let currentQuestion = 48;
 let score = 0;
 let currentRound = "";
 let playerAnswers = [];
@@ -488,7 +488,7 @@ const answerAudio =
 
     nextQuestion.textContent =
         currentQuestion === questions.length - 1
-            ? "🎉 That's All Folks!"
+            ? "🎉 That's All Folks! Click for Your Score"
             : "Next Question ➜";
 
     nextQuestion.disabled = false;
@@ -959,7 +959,7 @@ imageModal.addEventListener("click", (e) => {
 // Final photo slideshow
 
 const slideshowImages = Array.from(
-    { length: 77 },
+    { length: 102 },
     (_, index) => `images/slideshow/slide${index + 1}.jpg`
 );
 

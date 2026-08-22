@@ -85,7 +85,7 @@ const questions = [
         question: "Which song was at Number 1 in the UK charts on 4th September 1976?",
 
         image: "images/quiz/pops1.jpg",
-        revealImage: "images/quiz/dancingqueen.jpg",
+        revealImage: "images/quiz/abba.jpg",
         revealImageAfterAnswer: true,
 
         answers: [
