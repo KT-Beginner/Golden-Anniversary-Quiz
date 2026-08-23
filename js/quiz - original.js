@@ -11,7 +11,7 @@ if (sessionStorage.getItem("diamondQuizUnlocked") !== "true") {
 const playerName = localStorage.getItem("playerName") || "Guest";
 
 // Quiz state
-let currentQuestion = 0;
+let currentQuestion = 30;
 let score = 0;
 let currentRound = "";
 let playerAnswers = [];
@@ -87,7 +87,7 @@ const roundInfo = {
     "👨‍👩‍👧 Family": {
         title: "👨‍👩‍👧 Round 2 – Family",
         photo: "images/rounds/family.jpg",
-        message: "Time to see how well you know Diane, Robert, their family and some trivia from over the years."
+        message: "Time to see how well you know Diane, Robert, their family and the memories they've created together."
     },
 
     "🏖️ Holidays": {
@@ -392,47 +392,10 @@ setTimeout(() => {
     questionVideo.src = q.revealVideo;
     questionVideo.currentTime = 0;
 
-   questionVideo.onplaying = () => {
-
-questionImage.style.display = "none";
-
-questionVideo.style.display = "block";
-
-photoFrame.style.display = "block";
-
-if (q.videoTitle || q.videoText) {
-
-imageCaption.innerHTML = "";
-
-if (q.videoTitle) {
-
-const title = document.createElement("strong");
-
-title.className = "photo-note-title";
-
-title.textContent = q.videoTitle;
-
-imageCaption.appendChild(title);
-
-}
-
-if (q.videoText) {
-
-const text = document.createElement("span");
-
-text.className = "photo-note-text";
-
-text.textContent = q.videoText;
-
-imageCaption.appendChild(text);
-
-}
-
-imageCaption.style.display = "block";
-
-}
-
-};
+    questionVideo.onplaying = () => {
+        questionImage.style.display = "none";
+        questionVideo.style.display = "block";
+    };
 
     questionVideo.onended = () => {
 
@@ -996,7 +959,7 @@ imageModal.addEventListener("click", (e) => {
 // Final photo slideshow
 
 const slideshowImages = Array.from(
-    { length: 103 },
+    { length: 102 },
     (_, index) => `images/slideshow/slide${index + 1}.jpg`
 );
 
@@ -1297,27 +1260,29 @@ if (nextSlideButton) {
 }
 
 if (pauseSlideshowButton) {
+    pauseSlideshowButton.addEventListener(
+        "click",
+        (event) => {
+            event.stopPropagation();
 
-pauseSlideshowButton.addEventListener("click", (event) => {
+            slideshowPaused =
+                !slideshowPaused;
 
-event.stopPropagation();
+            if (slideshowPaused) {
+                stopSlideshowTimer();
 
-slideshowPaused = !slideshowPaused;
+                pauseSlideshowButton.textContent =
+                    "▶ Play";
+            } else {
+                pauseSlideshowButton.textContent =
+                    "⏸ Pause";
 
-if (slideshowPaused) {
+                startSlideshowTimer();
+            }
 
-pauseSlideshowButton.textContent = "▶ Play";
-
-} else {
-
-pauseSlideshowButton.textContent = "⏸ Pause";
-
-}
-
-showSlideshowControls();
-
-});
-
+            showSlideshowControls();
+        }
+    );
 }
 
 if (closeSlideshowButton) {

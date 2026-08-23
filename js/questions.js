@@ -147,6 +147,13 @@ const questions = [
 {
     round: "👨‍👩‍👧 Family",
     question: "Where was this photograph taken?",
+
+     image: "images/quiz/diane1985.jpg",
+    revealImageAfterAnswer: true,
+    revealImage: "images/quiz/babylaura2.jpg",
+   
+
+
     answers: [
         "Beacon Way",
         "Earl Marshall Road",
@@ -154,8 +161,6 @@ const questions = [
         "Stuart Grove"
     ],
     correct: 1,
-
-    image: "images/quiz/diane1985.jpg",
 
     photoTitle: "🍼 Hello Laura!",
     photoText: "🧸 A new addition to the family",
@@ -396,7 +401,24 @@ question: "At which University did Laura complete her Master's in Teaching and L
     photoTitle: "⛪ Venice, September 1983",
     photoText: "🐦 Feeding time in St Mark's Square.  This Venice tradition was banned in 2008",
    showPhotoTitleAfterAnswer: true,
-},    
+},   
+{ 
+    round: "🏖️ Holidays",
+    question: "Which mountain range provides the spectacular backdrop to Puerto Pollensa in Mallorca?",
+    image: "images/quiz/pollensa1.jpg",
+     revealImageAfterAnswer: true,
+    revealImage: "images/quiz/pollensa2.jpg",
+    
+    answers: [
+        "The Alps",
+        "The Pyrenees",
+        "Serra de Tramuntana",
+        "The Dolomites"
+    ],
+    correct: 2,
+    photoTitle: "🏖️ Puerto Pollensa 1989",
+     
+}, 
 {
         round: "🏖️ Holidays",
     question: "In 1920, which country won the last Olympic tug-of-war gold medal?",
@@ -485,32 +507,14 @@ revealImage: "images/quiz/honda.jpg",
     answers: [
         "Great Yarmouth",
         "Skegness",
-        "Majora",
+        "Mallora",
         "Ingoldmells"
     ],
     correct: 1,
    
     photoTitle: "🚂 1980s postcard from Skegness",
 },  
-{
-        round: "🏖️ Holidays",
-    question: "Robert and Andrew's T-shirts give a big clue — which year was this holiday?",
-    image: "images/quiz/ibiza.jpg",
-    
-    revealImageAfterAnswer: true,
-    revealImage: "images/quiz/cardibiza.jpg",
 
-    answers: [
-        "1986",
-        "1988",
-        "1990",
-        "1992"
-    ],
-    correct: 2,
-    
-   photoTitle: "⚔️ 1st Division — Here We Come!",
-    photoText: "The Blades were going up… and Robert & Andrew were ready! ⚽"
-},
 {
         round: "🏖️ Holidays",
     question: "Where was this holiday? Hint : renowned for its strong trade winds, windsurfing and spectacular sand dunes?",
@@ -584,41 +588,48 @@ revealImage: "images/quiz/honda.jpg",
                 
         revealImageAfterAnswer: true
     },
-
-{ 
-    round: "📅 Guess the Year",
-    question: "Sky Television launched in the UK the same year as this holiday. Can you remember when?",
-    image: "images/quiz/pollensa1.jpg",
-     revealImageAfterAnswer: true,
-    revealImage: "images/quiz/pollensa2.jpg",
+{
+        round: "📅 Guess the Year",
+    question: "Robert and Andrew's T-shirts give a big clue — which year was this holiday?",
+    image: "images/quiz/ibiza.jpg",
     
+    revealImageAfterAnswer: true,
+    revealImage: "images/quiz/cardibiza.jpg",
+
     answers: [
-        "1987",
+        "1986",
         "1988",
-        "1989",
-        "1990"
+        "1990",
+        "1992"
     ],
     correct: 2,
-    photoTitle: "🏖️ Puerto Pollensa 1989",
-     
+    
+   photoTitle: "⚔️ 1st Division — Here We Come!",
+    photoText: "The Blades were going up… and Robert & Andrew were ready! ⚽"
 },
+
 {
      round: "📅 Guess the Year",
-        question: "In which year did Diane & Robert celebrate their 'Ruby' Wedding Anniversary?",
-         image: "images/quiz/ruby.jpg",
-     revealImageAfterAnswer: true,
-    revealImage: "images/quiz/olympicteam.jpg",
+        question: "In which year did Diane & Robert celebrate their 'Pearl' Wedding Anniversary?",
+          startImage: "images/quiz/pearl.jpg",
+          
+    revealVideo: "videos/jamesbond.mp4",
+    videoTitle: "🎬 Also in 2006...",
+      videoText: "Daniel Craig made his debut as James Bond in Casino Royale", 
+        showPhotoTitleAfterAnswer: true,
+
+    revealImage: "images/quiz/shakennotstirred.jpg",
+ 
         answers: [
             "2006",
             "2011",
             "2016",
             "2021"
         ],
-        correct: 2,
+        correct: 0,
         
 
-    photoTitle: "🥇  Serving Up a Golden Summer! 2016",  
-    photoText: "🎾 Andy Murray lifted the Wimbledon trophy and struck gold in Rio, as Team GB celebrated an incredible 67 Olympic medals",
+       photoText: "🍸30 years together — Shaken, Not Stirred!",
     showPhotoTitleAfterAnswer: true
 },  
 {
@@ -629,12 +640,12 @@ revealImage: "images/quiz/honda.jpg",
     revealImage: "images/quiz/rickshaw.jpg",
 
         answers: [
-            "1981",
-            "1991",
-            "2001",
-            "2011"
+            "2005",
+            "2008",
+            "2011",
+            "2014"
         ],
-        correct: 3,
+        correct: 2,
         
     photoTitle: "🧸 The BBC challenge began in 2011, when Matt Baker rode a rickshaw from Edinburgh to London",  
     photoText: "🚲 The Ness Family completed their challenge years before",
