@@ -4,26 +4,47 @@ document.addEventListener("DOMContentLoaded", () => {
     const passwordSubmit = document.getElementById("passwordSubmit");
     const passwordMessage = document.getElementById("passwordMessage");
 
-    const quizPassword = "nedlog";
+   const quizPasswordHash = "1699b82c32dd7fe9a74d3c5e10942876b173233ec0386c577829f27eec5c4a34";
+  
+   async function hashPassword(password) {
 
-    function unlockQuiz() {
-        const enteredPassword = passwordInput.value.trim();
+const data = new TextEncoder().encode(password);
 
-       if (enteredPassword.toLowerCase() === quizPassword.toLowerCase()) {
-    sessionStorage.setItem("diamondQuizUnlocked", "true");
+const hashBuffer = await crypto.subtle.digest("SHA-256", data);
 
-    document.body.classList.remove("quiz-locked");
-    passwordGate.style.display = "none";
+const hashArray = Array.from(new Uint8Array(hashBuffer));
 
-    document.querySelector(".container").style.display = "block";
+return hashArray.map(byte => byte.toString(16).padStart(2, "0")).join("");
+
+}
+
+    async function unlockQuiz() {
+
+const enteredPassword = passwordInput.value.trim().toLowerCase();
+
+const enteredHash = await hashPassword(enteredPassword);
+
+if (enteredHash === quizPasswordHash) {
+
+sessionStorage.setItem("diamondQuizUnlocked", "true");
+
+document.body.classList.remove("quiz-locked");
+
+passwordGate.style.display = "none";
+
+document.querySelector(".container").style.display = "block";
+
 } else {
-            passwordMessage.textContent =
-                "Sorry, that password is incorrect.";
 
-            passwordInput.value = "";
-            passwordInput.focus();
-        }
-    }
+passwordMessage.textContent = "Sorry, that password is incorrect.";
+
+passwordInput.value = "";
+
+passwordInput.focus();
+
+}
+
+}
 
     const container = document.querySelector(".container");
 
