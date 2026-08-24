@@ -10,11 +10,15 @@ if (sessionStorage.getItem("diamondQuizUnlocked") !== "true") {
 // Player name
 const playerName = localStorage.getItem("playerName") || "Guest";
 
-// Quiz state
-let currentQuestion = 0;
-let score = 0;
+// Quiz state - restore progress after an accidental refresh
+
+let currentQuestion = Number(sessionStorage.getItem("quizCurrentQuestion")) || 0;
+
+let score = Number(sessionStorage.getItem("quizScore")) || 0;
+
 let currentRound = "";
-let playerAnswers = [];
+
+let playerAnswers = JSON.parse(sessionStorage.getItem("quizPlayerAnswers") || "[]");
 
 // Keep track of the currently playing music clip
 let currentQuestionAudio = null;
@@ -311,6 +315,19 @@ buttons.forEach(btn => btn.disabled = false);
     button.disabled = false;
     button.style.background = "";
 });
+const savedAnswer = playerAnswers[currentQuestion];
+
+if (savedAnswer !== undefined) {
+
+buttons.forEach(btn => btn.disabled = false);
+
+setTimeout(() => {
+
+buttons[savedAnswer].click();
+
+}, 100);
+
+}
 }
 function showCorrectSparkles() {
 
@@ -333,7 +350,9 @@ buttons.forEach((button, index) => {
 
     button.addEventListener("click", () => {
 
-        playerAnswers[currentQuestion] = index;
+        const wasAlreadyAnswered = playerAnswers[currentQuestion] !== undefined;
+
+playerAnswers[currentQuestion] = index;
 
     // Stop the question music if it's still playing
     if (currentQuestionAudio) {
@@ -356,7 +375,11 @@ const correct = questions[currentQuestion].correct;
 
       if (index === correct) {
 
-    score++;
+    if (!wasAlreadyAnswered) {
+
+score++;
+
+}
     button.style.background = "green";
    feedback.innerHTML = '<span class="green-tick">✅</span> <span class="correct-text">Correct!</span>';
 
@@ -374,6 +397,12 @@ const correct = questions[currentQuestion].correct;
     wrongSound.currentTime = 0;
     wrongSound.play();
 }
+sessionStorage.setItem("quizCurrentQuestion", currentQuestion);
+
+sessionStorage.setItem("quizScore", score);
+
+sessionStorage.setItem("quizPlayerAnswers", JSON.stringify(playerAnswers));
+
 const q = questions[currentQuestion];
 setTimeout(() => {
 
@@ -538,6 +567,8 @@ function moveToNextQuestion() {
 
     currentQuestion++;
 
+    sessionStorage.setItem("quizCurrentQuestion", currentQuestion);
+
 if (currentQuestion < questions.length) {
     loadQuestion();
         } else {
@@ -668,7 +699,7 @@ function launchConfetti() {
     }
 
 }
-function showFinalScreen() {
+function showFinalScreen(silent = false) {
 
     progress.style.width = "100%";
 
@@ -702,7 +733,8 @@ function showFinalScreen() {
 
 }
 
-   
+if (!silent) {
+
 congratulationsSound.currentTime = 0;
 congratulationsSound.play()
 
@@ -725,8 +757,12 @@ congratulationsSound.onended = () => {
                 "Cheer sound could not play:",
                 error
             );
+        
         });
 };
+}
+
+
 
     card.innerHTML = `
         <div class="finish-screen">
@@ -954,8 +990,17 @@ viewSlideshowButton.addEventListener("click", () => {
 });
 
 playAgainButton.addEventListener("click", () => {
-    sessionStorage.removeItem("diamondQuizUnlocked");
-    window.location.href = "index.html";
+
+sessionStorage.removeItem("diamondQuizUnlocked");
+
+sessionStorage.removeItem("quizCurrentQuestion");
+
+sessionStorage.removeItem("quizScore");
+
+sessionStorage.removeItem("quizPlayerAnswers");
+
+window.location.href = "index.html";
+
 });
 }
 // ==========================================
@@ -1071,7 +1116,8 @@ function displaySlideshowImage() {
     }
 
     slideshowImage.src =
-        slideshowImages[slideshowIndex];
+    slideshowImages[slideshowIndex];
+    sessionStorage.setItem("slideshowIndex", slideshowIndex);
 
     slideshowImage.alt =
         `Slideshow photograph ${slideshowIndex + 1} ` +
@@ -1085,7 +1131,14 @@ function stopSlideshowTimer() {
 
 function closeSlideshow(showEnding = true) {
     stopSlideshowTimer();
+    sessionStorage.removeItem("slideshowActive");
+
+    sessionStorage.removeItem("slideshowIndex");
+
+    sessionStorage.removeItem("slideshowPaused");
+
     clearTimeout(slideshowControlsTimer);
+
 
     if (slideshow) {
         slideshow.classList.add("hidden");
@@ -1165,6 +1218,9 @@ function startSlideshow() {
 
     slideshowIndex = 0;
     slideshowPaused = false;
+    sessionStorage.setItem("slideshowActive", "true");
+
+    sessionStorage.setItem("slideshowPaused", "false");
 
     if (pauseSlideshowButton) {
         pauseSlideshowButton.textContent =
@@ -1181,7 +1237,33 @@ function startSlideshow() {
     displaySlideshowImage();
     startSlideshowTimer();
 }
+function restoreSlideshow() {
 
+slideshowIndex = Number(sessionStorage.getItem("slideshowIndex")) || 0;
+
+slideshowPaused = sessionStorage.getItem("slideshowPaused") === "true";
+
+slideshow.classList.remove("hidden");
+
+document.body.classList.add("slideshow-open");
+
+displaySlideshowImage();
+
+if (pauseSlideshowButton) {
+
+pauseSlideshowButton.textContent = slideshowPaused ? "▶ Play" : "⏸ Pause";
+
+}
+
+hideSlideshowControls();
+
+if (!slideshowPaused) {
+
+startSlideshowTimer();
+
+}
+
+}
 if (slideshowImage) {
     slideshowImage.addEventListener(
         "click",
@@ -1303,6 +1385,7 @@ pauseSlideshowButton.addEventListener("click", (event) => {
 event.stopPropagation();
 
 slideshowPaused = !slideshowPaused;
+sessionStorage.setItem("slideshowPaused", slideshowPaused);
 
 if (slideshowPaused) {
 
@@ -1443,6 +1526,11 @@ function showSlideshowEnding() {
                 sessionStorage.removeItem(
                     "diamondQuizUnlocked"
                 );
+                sessionStorage.removeItem("quizCurrentQuestion");
+
+sessionStorage.removeItem("quizScore");
+
+sessionStorage.removeItem("quizPlayerAnswers");
 
                 window.location.href =
                     "index.html";
@@ -1459,6 +1547,11 @@ function showSlideshowEnding() {
                 sessionStorage.removeItem(
                     "diamondQuizUnlocked"
                 );
+                sessionStorage.removeItem("quizCurrentQuestion");
+
+sessionStorage.removeItem("quizScore");
+
+sessionStorage.removeItem("quizPlayerAnswers");
 
                 window.location.href =
                     "index.html";
@@ -1467,4 +1560,21 @@ function showSlideshowEnding() {
 }
 
 // Start the quiz
+
+if (currentQuestion >= questions.length) {
+
+const restoringSlideshow = sessionStorage.getItem("slideshowActive") === "true";
+
+showFinalScreen(restoringSlideshow);
+
+if (restoringSlideshow) {
+
+restoreSlideshow();
+
+}
+
+} else {
+
 loadQuestion();
+
+}
