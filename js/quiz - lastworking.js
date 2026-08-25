@@ -12,7 +12,7 @@ const playerName = localStorage.getItem("playerName") || "Guest";
 
 // Quiz state - restore progress after an accidental refresh
 
-let currentQuestion = Number(sessionStorage.getItem("quizCurrentQuestion")) || 9;
+let currentQuestion = Number(sessionStorage.getItem("quizCurrentQuestion")) || 11;
 
 let score = Number(sessionStorage.getItem("quizScore")) || 0;
 
@@ -148,83 +148,6 @@ continueRound.addEventListener("click", () => {
     document.body.style.overflow = "auto";
     displayQuestion();
 });
-const preloadedMedia = [];
-
-function preloadNextQuestion() {
-
-const nextIndex = currentQuestion + 1;
-
-if (nextIndex >= questions.length) return;
-
-const nextQ = questions[nextIndex];
-
-const imageFiles = [
-
-nextQ.image,
-
-nextQ.startImage,
-
-nextQ.revealImage
-
-].filter(Boolean);
-
-imageFiles.forEach(src => {
-
-const img = new Image();
-
-img.src = src;
-
-preloadedMedia.push(img);
-
-});
-
-const audioFiles = [
-
-nextQ.audioQuestion,
-
-nextQ.audioAnswer,
-
-nextQ.audio,
-
-nextQ.audioFull
-
-].filter(Boolean);
-
-audioFiles.forEach(src => {
-
-const audio = new Audio();
-
-audio.preload = "auto";
-
-audio.src = src;
-
-preloadedMedia.push(audio);
-
-});
-
-const videoFiles = [
-
-nextQ.video,
-
-nextQ.revealVideo
-
-].filter(Boolean);
-
-videoFiles.forEach(src => {
-
-const video = document.createElement("video");
-
-video.preload = "auto";
-
-video.src = src;
-
-video.load();
-
-preloadedMedia.push(video);
-
-});
-
-}
 // ==========================================
 // Load Question
 // ==========================================
@@ -405,7 +328,6 @@ buttons[savedAnswer].click();
 }, 100);
 
 }
-setTimeout(preloadNextQuestion, 1500);
 }
 function showCorrectSparkles() {
 
