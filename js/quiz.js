@@ -12,7 +12,7 @@ const playerName = localStorage.getItem("playerName") || "Guest";
 
 // Quiz state - restore progress after an accidental refresh
 
-let currentQuestion = Number(sessionStorage.getItem("quizCurrentQuestion")) || 0;
+let currentQuestion = Number(sessionStorage.getItem("quizCurrentQuestion")) || 11;
 
 let score = Number(sessionStorage.getItem("quizScore")) || 0;
 
@@ -816,7 +816,7 @@ congratulationsSound.onended = () => {
     </button>
 
     <button id="playAgain" class="start-btn">
-        🔄 Play Again
+        🔄 Play Quiz Again
     </button>
 
 </div>
