@@ -605,7 +605,7 @@ revealImage: "images/quiz/honda.jpg",
     correct: 2,
     
    photoTitle: "⚔️ 1st Division — Here We Come!",
-    photoText: "The Blades were going up… and Robert & Andrew were ready! ⚽"
+    photoText: "1990 The Blades were going up… and Robert & Andrew were ready! ⚽"
 },
 
 {
