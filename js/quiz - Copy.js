@@ -828,7 +828,7 @@ congratulationsSound.play()
 congratulationsSound.onended = () => {
 
     launchConfetti();
-
+    
     cheerSound.muted = false;
     cheerSound.currentTime = 0;
 
@@ -911,39 +911,159 @@ const printResultsButton =
 
 printResultsButton.addEventListener("click", () => {
 
-    const resultsData = {
-        playerName: playerName,
-        score: score,
-        total: questions.length,
+    let questionResults = "";
 
-        results: questions.map((q, index) => {
+    questions.forEach((q, index) => {
 
-            const selectedAnswerIndex = playerAnswers[index];
-            const correctAnswerIndex = q.correct;
+        const selectedAnswerIndex = playerAnswers[index];
+        const correctAnswerIndex = q.correct;
 
-            return {
-                question: q.question,
+        const selectedAnswer =
+            selectedAnswerIndex !== undefined
+                ? q.answers[selectedAnswerIndex]
+                : "No answer";
 
-                selectedAnswer:
-                    selectedAnswerIndex !== undefined
-                        ? q.answers[selectedAnswerIndex]
-                        : "No answer",
+        const correctAnswer =
+            q.answers[correctAnswerIndex];
 
-                correctAnswer:
-                    q.answers[correctAnswerIndex],
+        const result =
+            selectedAnswerIndex === correctAnswerIndex
+                ? "✅ Correct"
+                : "❌ Incorrect";
 
-                isCorrect:
-                    selectedAnswerIndex === correctAnswerIndex
-            };
-        })
-    };
+        questionResults += `
+            <div class="question-result">
+                <h3>${index + 1}. ${q.question}</h3>
+                <p><strong>Your answer:</strong> ${selectedAnswer}</p>
+                <p><strong>Correct answer:</strong> ${correctAnswer}</p>
+                <p><strong>Result:</strong> ${result}</p>
+            </div>
+        `;
+    });
 
-    localStorage.setItem(
-        "goldenQuizResults",
-        JSON.stringify(resultsData)
-    );
+    const printWindow = window.open("", "_blank");
 
-    window.open("results.html", "_blank");
+    printWindow.document.write(`
+        <!DOCTYPE html>
+        <html>
+        <head>
+            <title>${playerName}'s Golden Anniversary Challenge Results</title>
+
+            <style>
+                body {
+                    font-family: Arial, sans-serif;
+                    max-width: 800px;
+                    margin: 30px auto;
+                    padding: 30px;
+                    color: #333;
+                }
+
+                .results-sheet {
+                    border: 4px solid #d4af37;
+                    padding: 30px;
+                    border-radius: 15px;
+                }
+
+               h1 {
+    color: #8a6515;
+    text-align: center;
+    font-size: 1.8rem;
+}
+
+                .score {
+                    text-align: center;
+                    font-size: 26px;
+                    font-weight: bold;
+                    color: #8a6515;
+                    margin: 20px 0;
+                }
+
+                .question-result {
+                    border-bottom: 1px solid #ccc;
+                    padding: 15px 0;
+                    page-break-inside: avoid;
+                }
+
+                .question-result h3 {
+                    color: #8a6515;
+                }
+
+                .footer {
+                    text-align: center;
+                    margin-top: 30px;
+                    font-style: italic;
+                }
+
+               .print-button {
+    display: block;
+    margin: 25px auto;
+    padding: 12px 25px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.results-buttons {
+    text-align: center;
+    margin: 25px 0;
+}
+
+.return-button {
+    display: inline-block;
+    margin: 0 8px;
+    padding: 12px 25px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+@media print {
+    .print-button,
+    .return-button {
+        display: none;
+    }
+}
+            </style>
+        </head>
+
+        <body>
+
+            <div class="results-sheet">
+
+                <h1>🥂 Diane & Robert’s Golden Anniversary Challenge 🥂</h1>
+
+                <div class="score">
+                    ${playerName}<br>
+                    Score: ${score} / ${questions.length}
+                </div>
+
+                ${questionResults}
+
+                <div class="footer">
+                💛 Thank you for celebrating Diane & Robert’s<br>
+                Golden Wedding Anniversary.<br><br>
+               </div>
+
+            </div>
+        
+    <div class="results-buttons">
+
+    <button class="print-button" onclick="window.print()">
+        🖨️ Print / Save as PDF
+    </button>
+
+    <button
+        class="return-button"
+        onclick="window.close()"
+    >
+        ← Return to Quiz
+    </button>
+
+</div>
+
+        </body>
+        </html>
+    `);
+
+  printWindow.document.close();
 });
 
 viewSlideshowButton.addEventListener("click", () => {
