@@ -57,7 +57,7 @@ const questions = [
         ],
         correct: 0,
         
-        photoTitle: "💍Kevin Bacon & Kyra Sedgwick married on 4th September 1988",
+        photoTitle: "💍Kevin Bacon & Kyra Sedgwick married on<br>4th September 1988",
         photoText: "🥂 Diane & Robert got there first!",
         
     },
@@ -99,7 +99,7 @@ const questions = [
          manualNext: true,   
 
     
-    photoTitle: "🎵 Dancing Queen - ABBA were famous for their extravagant costumes",
+    photoTitle: "🎵 Dancing Queen - ABBA were famous<br>for their extravagant costumes",
     photoText: "Swedish law meant costumes could be deducted against tax so long as they were so outrageous they could not possibly be worn on the street",
     },
     { 
@@ -336,7 +336,7 @@ question: "At which University did Laura complete her Master's in Teaching and L
     
     showPhotoTitleAfterAnswer: true,
 
-     photoText: "🍾 Elise wasn't actually there. We added her to the photo!",
+     photoText: "🍾 Elise wasn't actually there.<br>We added her to the photo!",
     
 },
 {

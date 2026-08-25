@@ -12,7 +12,7 @@ const playerName = localStorage.getItem("playerName") || "Guest";
 
 // Quiz state - restore progress after an accidental refresh
 
-let currentQuestion = Number(sessionStorage.getItem("quizCurrentQuestion")) || 0;
+let currentQuestion = Number(sessionStorage.getItem("quizCurrentQuestion")) || 49;
 
 let score = Number(sessionStorage.getItem("quizScore")) || 0;
 
@@ -44,9 +44,29 @@ const wrongSound = new Audio("sounds/wrong.mp3");
 
 const congratulationsSound =
     new Audio("sounds/congratulations.mp3");
-
+    
 const cheerSound =
     new Audio("sounds/cheer.mp3");
+    // Unlock final sounds for iPhone, but keep them muted until the end
+congratulationsSound.muted = true;
+cheerSound.muted = true;
+
+document.addEventListener("click", () => {
+
+    [congratulationsSound, cheerSound].forEach(sound => {
+
+        sound.play()
+            .then(() => {
+                sound.pause();
+                sound.currentTime = 0;
+            })
+            .catch(() => {
+                // Ignore if the browser blocks the unlock attempt
+            });
+
+    });
+
+}, { once: true });
 
 
 const card = document.querySelector(".card");
@@ -794,6 +814,7 @@ function showFinalScreen(silent = false) {
 
 if (!silent) {
 
+congratulationsSound.muted = false;
 congratulationsSound.currentTime = 0;
 congratulationsSound.play()
 
@@ -807,7 +828,8 @@ congratulationsSound.play()
 congratulationsSound.onended = () => {
 
     launchConfetti();
-
+    
+    cheerSound.muted = false;
     cheerSound.currentTime = 0;
 
     cheerSound.play()
