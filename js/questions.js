@@ -306,7 +306,7 @@ question: "At which University did Laura complete her Master's in Teaching and L
 
     correct: 0,
     
-    photoTitle: " 🍼 Oscar Maximo Walsh 🍼 24th January 2025",
+    photoTitle: " 🍼 Oscar Maximo Walsh 🍼     24th January 2025",
     
     showPhotoTitleAfterAnswer: true,
 
