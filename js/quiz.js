@@ -12,7 +12,7 @@ const playerName = localStorage.getItem("playerName") || "Guest";
 
 // Quiz state - restore progress after an accidental refresh
 
-let currentQuestion = Number(sessionStorage.getItem("quizCurrentQuestion")) || 9;
+let currentQuestion = Number(sessionStorage.getItem("quizCurrentQuestion")) || 0;
 
 let score = Number(sessionStorage.getItem("quizScore")) || 0;
 
@@ -48,26 +48,6 @@ const congratulationsSound =
 const cheerSound =
     new Audio("sounds/cheer.mp3");
 
-// Unlock the final sounds silently on the player's first tap
-document.addEventListener("click", () => {
-
-    [congratulationsSound, cheerSound].forEach(sound => {
-
-        sound.muted = true;
-
-        sound.play()
-            .then(() => {
-                sound.pause();
-                sound.currentTime = 0;
-                sound.muted = false;
-            })
-            .catch(() => {
-                sound.muted = false;
-            });
-
-    });
-
-}, { once: true });
 
 const card = document.querySelector(".card");
 
@@ -127,14 +107,7 @@ const roundInfo = {
     }
 
 };
-function preloadRoundImages() {
-    Object.values(roundInfo).forEach(info => {
-        if (info.photo) {
-            const img = new Image();
-            img.src = info.photo;
-        }
-    });
-}
+
 function showRound(round) {
     const info = roundInfo[round];
 
@@ -1662,9 +1635,5 @@ restoreSlideshow();
 } else {
 
     loadQuestion();
-
-    // Quietly preload the round-screen pictures
-    // after the current question has had time to load
-    setTimeout(preloadRoundImages, 3000);
-
+  
 }

@@ -4,6 +4,23 @@ document.addEventListener("DOMContentLoaded", () => {
     const passwordSubmit = document.getElementById("passwordSubmit");
     const passwordMessage = document.getElementById("passwordMessage");
 
+     // Preload the round pictures while the player enters the password
+    const roundPictures = [
+        "images/rounds/wedding.jpg",
+        "images/rounds/family.jpg",
+        "images/rounds/holidays.jpg",
+        "images/rounds/year.jpg",
+        "images/rounds/music.jpg",
+        "images/rounds/true-false.jpg",
+        "images/rounds/whatnext.jpg",
+        "images/rounds/dianerobert2026.jpg"
+    ];
+
+    roundPictures.forEach(src => {
+        const img = new Image();
+        img.src = src;
+    });
+    
    const quizPasswordHash = "1699b82c32dd7fe9a74d3c5e10942876b173233ec0386c577829f27eec5c4a34";
   
    async function hashPassword(password) {
