@@ -127,6 +127,14 @@ const roundInfo = {
     }
 
 };
+function preloadRoundImages() {
+    Object.values(roundInfo).forEach(info => {
+        if (info.photo) {
+            const img = new Image();
+            img.src = info.photo;
+        }
+    });
+}
 function showRound(round) {
     const info = roundInfo[round];
 
@@ -1653,6 +1661,10 @@ restoreSlideshow();
 
 } else {
 
-loadQuestion();
+    loadQuestion();
+
+    // Quietly preload the round-screen pictures
+    // after the current question has had time to load
+    setTimeout(preloadRoundImages, 3000);
 
 }
