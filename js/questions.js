@@ -129,6 +129,8 @@ const questions = [
     question: "What colour was Andrew's first car?",
 
     image: "images/quiz/lplate.jpg",
+    smallImage: true,
+
         revealImage: "images/quiz/andrewcar.jpg",
         revealImageAfterAnswer: true,
 
