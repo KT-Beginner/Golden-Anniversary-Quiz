@@ -77,7 +77,7 @@ const questions = [
         ],
         correct: 1,
         
-        photoTitle: "⚽ A point for the Blades — and a perfect match for Diane & Robert! 🥂",
+        photoTitle: "⚽ A point for the Blades <br>and a perfect match for<br>  Diane & Robert! 🥂",
         
     },
     {

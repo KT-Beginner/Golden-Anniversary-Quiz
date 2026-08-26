@@ -12,7 +12,7 @@ const playerName = localStorage.getItem("playerName") || "Guest";
 
 // Quiz state - restore progress after an accidental refresh
 
-let currentQuestion = Number(sessionStorage.getItem("quizCurrentQuestion")) || 0;
+let currentQuestion = Number(sessionStorage.getItem("quizCurrentQuestion")) || 3;
 
 let score = Number(sessionStorage.getItem("quizScore")) || 0;
 
@@ -274,7 +274,11 @@ feedback.style.display = "block";
 
  if (q.image || q.startImage) {
     questionImage.src = q.image || q.startImage;
-    questionImage.className = "question-image";
+    
+    questionImage.className =
+    q.smallImage
+        ? "question-image small-image"
+        : "question-image";
 
     imageCaption.textContent = q.caption || "";
 
