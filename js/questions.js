@@ -99,7 +99,7 @@ const questions = [
          manualNext: true,   
 
     
-    photoTitle: "🎵 Dancing Queen - ABBA were famous<br>for their extravagant costumes",
+    photoTitle: "🎵 Dancing Queen<b>ABBA were famous for their<br>extravagant costumes",
     photoText: "Swedish law meant costumes could be deducted against tax so long as they were so outrageous they could not possibly be worn on the street",
     },
     { 
