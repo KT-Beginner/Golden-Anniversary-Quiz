@@ -85,6 +85,8 @@ const questions = [
         question: "Which song was at Number 1 in the UK charts on 4th September 1976?",
 
         image: "images/quiz/pops1.jpg",
+        smallImage: true,
+
         revealImage: "images/quiz/abba.jpg",
         revealImageAfterAnswer: true,
 
@@ -108,6 +110,7 @@ const questions = [
    
     image: "images/quiz/mini1.jpg",
         revealImage: "images/quiz/mini.jpg",
+        smallImage: true,
         revealImageAfterAnswer: true,
    
     answers: [
@@ -258,6 +261,8 @@ const questions = [
      round: "👨‍👩‍👧 Family",
     question: "Approximately how many breaths might a toddler take in an hour?",
      image: "images/quiz/toddler.jpg",
+    smallImage: true,
+
     revealImage: "images/quiz/lilo.jpg",
     revealImageAfterAnswer: true,
     answers: [
@@ -425,6 +430,8 @@ question: "At which University did Laura complete her Master's in Teaching and L
         round: "🏖️ Holidays",
     question: "In 1920, which country won the last Olympic tug-of-war gold medal?",
     image: "images/quiz/1920rings.jpg",
+    smallImage: true,
+
     revealImage: "images/quiz/tug.jpg",
     revealImageAfterAnswer: true,
 
@@ -445,6 +452,8 @@ question: "At which University did Laura complete her Master's in Teaching and L
         round: "🏖️ Holidays",
     question: "How is a traditional pedalo powered?",
     image: "images/quiz/pedalohire.jpg",
+    smallImage: true,
+
 revealImage: "images/quiz/pedalo.jpg",
  revealImageAfterAnswer: true,
 
@@ -614,6 +623,7 @@ revealImage: "images/quiz/honda.jpg",
      round: "📅 Guess the Year",
         question: "In which year did Diane & Robert celebrate their 'Pearl' Wedding Anniversary?",
           startImage: "images/quiz/pearl.jpg",
+          smallImage: true,
           
     revealVideo: "videos/jamesbond.mp4",
     videoTitle: "🎬 Also in 2006...",
@@ -638,6 +648,8 @@ revealImage: "images/quiz/honda.jpg",
      round: "📅 Guess the Year",
         question: "The Children in Need Rickshaw Challenge began in which year?",
          image: "images/quiz/pudsey.jpg",
+         smallImage: true,
+
      revealImageAfterAnswer: true,
     revealImage: "images/quiz/rickshaw.jpg",
 
@@ -657,6 +669,7 @@ revealImage: "images/quiz/honda.jpg",
  round: "🎵 Music Round",
     question: "'How Deep Is Your Love' by the Bee Gees featured on the soundtrack of which famous 1977 film?",
      image: "images/quiz/record.jpg",
+     smallImage: true,
      
     answers: [
         "Grease",
@@ -678,6 +691,8 @@ revealImage: "images/quiz/honda.jpg",
  round: "🎵 Music Round",
     question: "This song from 1983 is particularly appropriate for the quiz.  What was the band?",
      image: "images/quiz/record80.jpg",
+     smallImage: true,
+
     answers: [
         "Duran Duran",
         "ABC",
@@ -698,6 +713,8 @@ revealImage: "images/quiz/honda.jpg",
  round: "🎵 Music Round",
     question: "This song by Huey Lewis & The News was the theme song from which blockbuster film from the year Laura was born?",
      image: "images/quiz/popcorn.jpg",
+     smallImage: true,
+
     answers: [
         "Ghostbusters",
         "Top Gun",
@@ -717,7 +734,8 @@ revealImage: "images/quiz/honda.jpg",
 {
  round: "🎵 Music Round",
     question: "This song spent 15 consecutive weeks at No. 1 in the UK after featuring on the soundtrack of which Hugh Grant film?",
-    image: "images/quiz/clapperboard.jpg",   
+    image: "images/quiz/clapperboard.jpg",  
+    smallImage: true, 
    
     answers: [
         "Notting Hill",
@@ -739,6 +757,8 @@ revealImage: "images/quiz/honda.jpg",
  round: "🎵 Music Round",
     question: "Here's one Laura might remember. Who was this band?",
      image: "images/quiz/cd.jpg",   
+     smallImage: true,
+
     answers: [
         "Hanson",
         "The Jacksons",
@@ -759,6 +779,8 @@ revealImage: "images/quiz/honda.jpg",
  round: "🎵 Music Round",
     question: "And here's one Oscar MMMight bop to. What is the name of the song?",
      image: "images/quiz/golden.jpg",
+     smallImage: true,
+
     answers: [
         "Up, Up, Up",
         "Demon Hunters",
