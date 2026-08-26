@@ -527,12 +527,15 @@ input {
    ========================= */
 
 html,
-html,
 body {
     width: 100%;
     max-width: 100%;
     overflow-x: hidden;
     overscroll-behavior-x: none;
+}
+
+html {
+    overflow-x: clip;
 }
 
 
@@ -2312,4 +2315,36 @@ input:focus {
     height: auto !important;
     margin-left: auto !important;
     margin-right: auto !important;
+}
+/* ==========================================
+   iPhone landscape quiz layout
+   ========================================== */
+
+@media (orientation: landscape) and (max-height: 500px) {
+
+    /* Let the quiz use the wider landscape screen */
+    .card {
+        width: 94vw !important;
+        max-width: 94vw !important;
+        margin: 6px auto 20px !important;
+    }
+
+    /* Let normal photos become properly wide */
+    .photo-frame {
+        width: 100% !important;
+        max-width: 100% !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
+
+    .photo-frame .question-image:not(.small-image),
+    .question-image:not(.small-image) {
+        width: 100% !important;
+        max-width: 100% !important;
+        height: auto !important;
+        max-height: 65svh !important;
+        object-fit: contain !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
 }

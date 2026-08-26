@@ -12,7 +12,7 @@ const playerName = localStorage.getItem("playerName") || "Guest";
 
 // Quiz state - restore progress after an accidental refresh
 
-let currentQuestion = Number(sessionStorage.getItem("quizCurrentQuestion")) || 3;
+let currentQuestion = Number(sessionStorage.getItem("quizCurrentQuestion")) || 30;
 
 let score = Number(sessionStorage.getItem("quizScore")) || 0;
 

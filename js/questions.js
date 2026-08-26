@@ -542,7 +542,7 @@ revealImage: "images/quiz/honda.jpg",
         "La Palma"
     ],
     correct: 0,
-    photoTitle: "🏖️ Fuerteventura - sand everywhere!",
+    photoTitle: "🏖️ Fuerteventura<br>sand everywhere!",
     
 },
 
@@ -595,7 +595,7 @@ revealImage: "images/quiz/honda.jpg",
             "1990"
         ],
         correct: 1,
-        photoTitle: "🩷 'Step Back in Time'… when Kylie hats were essential fashion", 
+        photoTitle: "🩷 'Step Back in Time'…<br>when Kylie hats were essential fashion", 
                 
         revealImageAfterAnswer: true
     },
@@ -640,7 +640,7 @@ revealImage: "images/quiz/honda.jpg",
         ],
         correct: 0,
         
-
+        photoTitle: "🤍 Pearl Anniversary 2006",
        photoText: "🍸30 years together — Shaken, Not Stirred!",
     showPhotoTitleAfterAnswer: true
 },  
@@ -751,7 +751,7 @@ revealImage: "images/quiz/honda.jpg",
     revealImage: "images/quiz/4weddings.jpg",
     revealImageAfterAnswer: true,
     photoTitle: "Wet Wet Wet's biggest hit",
-    photoText: "First recorded by the Troggs and later parodied by Bill Nighy in Love Actually.  Play Full Clip to hear them all"
+    photoText: "First recorded by the Troggs and later parodied by Bill Nighy in Love Actually<br>Play Full Clip to hear them all"
 },
 {
  round: "🎵 Music Round",
@@ -796,7 +796,7 @@ revealImage: "images/quiz/honda.jpg",
    
     revealImageAfterAnswer: true,
     photoTitle: "🎵 HUNTR/X – “Golden” (2025)",
-    photoText: "🎬 From the K-pop Demon Hunters animated film. Still a bit scary for Oscar we think!"
+    photoText: "🎬 From the K-pop Demon Hunters animated film<br>Still a bit scary for Oscar we think!"
 },
 {
     round: "✅ True or False",
