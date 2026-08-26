@@ -274,10 +274,7 @@ feedback.style.display = "block";
 
  if (q.image || q.startImage) {
     questionImage.src = q.image || q.startImage;
-    questionImage.className =
-    q.smallImage
-        ? "question-image small-image"
-        : "question-image";
+    questionImage.className = "question-image";
 
     imageCaption.textContent = q.caption || "";
 
