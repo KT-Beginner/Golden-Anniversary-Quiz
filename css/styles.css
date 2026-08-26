@@ -2307,8 +2307,8 @@ input:focus {
 }
 /* Decorative question images - keep visually small but sharp */
 .question-image.small-image {
-    width: 250px !important;
-    max-width: 70% !important;
+    width: 180px !important;
+    max-width: 60% !important;
     height: auto !important;
     margin-left: auto !important;
     margin-right: auto !important;
