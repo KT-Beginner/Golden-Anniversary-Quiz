@@ -414,7 +414,29 @@ input {
     }
 
 }
+.title::before,
+.title::after{
 
+    content:"✨";
+    position:absolute;
+    font-size:1.2rem;
+    animation:sparkle 3s infinite;
+}
+
+.title::before{
+
+    left:-18px;
+    top:8px;
+
+}
+
+.title::after{
+
+    right:-18px;
+    top:8px;
+    animation-delay:1.5s;
+
+}
 
 @keyframes sparkle{
 
