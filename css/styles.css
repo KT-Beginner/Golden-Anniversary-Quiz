@@ -415,20 +415,6 @@ input {
 
 }
 
-
-@keyframes sparkle{
-
-    0%,100%{
-        opacity:0;
-        transform:scale(.5) rotate(0deg);
-    }
-
-    50%{
-        opacity:1;
-        transform:scale(1.3) rotate(180deg);
-    }
-
-}
 .diamond{
     position:relative;
     display:inline-block;
@@ -540,10 +526,15 @@ input {
    ========================= */
 
 html,
+html,
 body {
     width: 100%;
     max-width: 100%;
     overflow-x: hidden;
+    overscroll-behavior-x: none;
+}
+body {
+    touch-action: pan-y;
 }
 
 body {
