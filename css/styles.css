@@ -533,9 +533,7 @@ body {
     overflow-x: hidden;
     overscroll-behavior-x: none;
 }
-body {
-    touch-action: pan-y;
-}
+
 
 body {
     min-height: 100vh;
