@@ -2374,3 +2374,8 @@ input:focus {
     max-height: none !important;
     object-fit: contain !important;
 }
+@media (max-width: 600px) {
+    .hero-photo {
+        max-width: 88% !important;
+    }
+}
