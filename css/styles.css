@@ -2348,11 +2348,3 @@ input:focus {
         margin-right: auto !important;
     }
 }
-/* Round intro pictures - fill gold frame on phones */
-@media (max-width: 600px) {
-    .round-photo {
-        width: 100% !important;
-        max-width: 100% !important;
-        object-fit: cover !important;
-    }
-}
