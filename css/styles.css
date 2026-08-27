@@ -2362,9 +2362,8 @@ input:focus {
 /* Holidays - show the whole image */
 .round-photo.holidays-round {
     width: 100%;
-    height: auto;
-    aspect-ratio: auto;
-    object-fit: contain;
+    aspect-ratio: 5 / 4;
+    object-fit: cover;
 }
 
 /* 3:2 rounds */
