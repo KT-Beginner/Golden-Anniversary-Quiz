@@ -2376,6 +2376,6 @@ input:focus {
 }
 @media (max-width: 600px) {
     .hero-photo {
-        max-width: 88% !important;
+        max-width: 75% !important;
     }
 }
