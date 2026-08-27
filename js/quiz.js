@@ -137,6 +137,12 @@ function showRound(round) {
     }
 
     roundTitle.textContent = info.title;
+
+    roundPhoto.className =
+        round === "💍 Wedding Day"
+            ? "round-photo portrait-round"
+            : "round-photo landscape-round";
+
     roundPhoto.src = info.photo;
     roundMessage.textContent = info.message;
 
