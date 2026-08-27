@@ -2352,23 +2352,29 @@ input:focus {
    Round introduction image aspect ratios
    ========================================== */
 
-/* Family, Holidays and Final Round - 5:4 */
+/* Family and Final Round */
 .round-photo.round-5-4 {
     width: 100%;
-    height: auto;
-    aspect-ratio: auto;
-    object-fit: contain;
+    aspect-ratio: 5 / 4;
+    object-fit: cover;
 }
 
-/* Guess the Year, Music, True/False and What Happened Next - 3:2 */
-.round-photo.round-3-2 {
+/* Holidays - show the whole image */
+.round-photo.holidays-round {
     width: 100%;
     height: auto;
     aspect-ratio: auto;
     object-fit: contain;
 }
 
-/* Round 1 Wedding Day - keep portrait proportions */
+/* 3:2 rounds */
+.round-photo.round-3-2 {
+    width: 100%;
+    aspect-ratio: 3 / 2;
+    object-fit: cover;
+}
+
+/* Round 1 Wedding Day */
 .round-photo.portrait-round {
     width: auto;
     max-width: 100%;

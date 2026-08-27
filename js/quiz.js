@@ -142,9 +142,12 @@ function showRound(round) {
 
     roundPhoto.className = "round-photo portrait-round";
 
+} else if (round === "🏖️ Holidays") {
+
+    roundPhoto.className = "round-photo holidays-round";
+
 } else if (
     round === "👨‍👩‍👧 Family" ||
-    round === "🏖️ Holidays" ||
     round === "❤️ Diane and Robert in 2026"
 ) {
 
