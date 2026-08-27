@@ -2349,17 +2349,24 @@ input:focus {
     }
 }
 /* ==========================================
-   Round introduction image sizing
+   Round introduction image aspect ratios
    ========================================== */
 
-/* Landscape round pictures */
-.round-photo.landscape-round {
+/* Family, Holidays and Final Round - 5:4 */
+.round-photo.round-5-4 {
     width: 100%;
-    aspect-ratio: 4 / 3;
+    aspect-ratio: 5 / 4;
     object-fit: cover;
 }
 
-/* Portrait round pictures - show the whole photograph */
+/* Guess the Year, Music, True/False and What Happened Next - 3:2 */
+.round-photo.round-3-2 {
+    width: 100%;
+    aspect-ratio: 3 / 2;
+    object-fit: cover;
+}
+
+/* Round 1 Wedding Day - keep portrait proportions */
 .round-photo.portrait-round {
     width: auto;
     max-width: 100%;
