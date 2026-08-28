@@ -751,7 +751,7 @@ revealImage: "images/quiz/honda.jpg",
     revealImage: "images/quiz/4weddings.jpg",
     revealImageAfterAnswer: true,
     photoTitle: "Wet Wet Wet's biggest hit",
-    photoText: "First recorded by the Troggs and later parodied by Bill Nighy in Love Actually<br>Play Full Clip to hear them all"
+    photoText: "First recorded by The Troggs and later parodied by Bill Nighy in Love Actually<br>Play Full Clip to hear them all"
 },
 {
  round: "🎵 Music Round",
@@ -1060,7 +1060,7 @@ revealImage: "images/quiz/honda.jpg",
 
  {
     round: "❤️ Diane and Robert in 2026",
-    question: "❤️ On 4th September 2026, how many days have Diane & Robert been married?<br>(You may use a calculator!)",
+    question: "❤️ On 4th September 2026, how many days have Diane & Robert been married? (You may use a calculator!)",
   
     image: "images/quiz/dianerobert.jpg",  
     
