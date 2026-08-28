@@ -2349,35 +2349,34 @@ input:focus {
     }
 }
 /* ==========================================
-   Round introduction image aspect ratios
+   Final round introduction image sizing
    ========================================== */
 
-/* Family and Final Round */
+/* Family, Holidays and Final Round */
 .round-photo.round-5-4 {
     width: 100%;
-    aspect-ratio: 5 / 4;
-    object-fit: cover;
+    height: auto !important;
+    max-height: none !important;
+    aspect-ratio: auto;
+    object-fit: contain;
 }
 
-/* Holidays - show the whole image */
-.round-photo.holidays-round {
-    width: 100%;
-    aspect-ratio: 5 / 4;
-    object-fit: cover;
-}
-
-/* 3:2 rounds */
+/* Guess the Year, Music, True/False and What Happened Next */
 .round-photo.round-3-2 {
     width: 100%;
-    aspect-ratio: 3 / 2;
-    object-fit: cover;
+    height: auto !important;
+    max-height: none !important;
+    aspect-ratio: auto;
+    object-fit: contain;
 }
 
 /* Round 1 Wedding Day */
 .round-photo.portrait-round {
     width: auto;
     max-width: 100%;
-    height: auto;
+    height: auto !important;
+    max-height: none !important;
+    aspect-ratio: auto;
     object-fit: contain;
 }
 /* Start-screen portrait photo */
