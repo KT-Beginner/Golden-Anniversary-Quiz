@@ -2409,7 +2409,7 @@ input:focus {
         width: auto;
         max-width: 100%;
         height: auto !important;
-        max-height: 42svh !important;
+        max-height: 35svh !important;
         object-fit: contain;
         margin-left: auto;
         margin-right: auto;
