@@ -2392,3 +2392,26 @@ input:focus {
         max-width: 88% !important;
     }
 }
+@media (max-width: 600px) {
+
+    .round-photo.round-5-4,
+    .round-photo.round-3-2 {
+        width: auto;
+        max-width: 100%;
+        height: auto !important;
+        max-height: 28svh !important;
+        object-fit: contain;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .round-photo.portrait-round {
+        width: auto;
+        max-width: 100%;
+        height: auto !important;
+        max-height: 42svh !important;
+        object-fit: contain;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
