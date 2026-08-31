@@ -755,7 +755,7 @@ revealImage: "images/quiz/honda.jpg",
 },
 {
  round: "🎵 Music Round",
-    question: "Here's one Laura might remember. Who was this band?",
+    question: "Here's one Laura might remember. Who is this band?",
      image: "images/quiz/cd.jpg",   
      smallImage: true,
 
