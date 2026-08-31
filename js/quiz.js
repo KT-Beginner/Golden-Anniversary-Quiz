@@ -12,7 +12,7 @@ const playerName = localStorage.getItem("playerName") || "Guest";
 
 // Quiz state - restore progress after an accidental refresh
 
-let currentQuestion = Number(sessionStorage.getItem("quizCurrentQuestion")) || 0;
+let currentQuestion = Number(sessionStorage.getItem("quizCurrentQuestion")) || 49;
 
 let score = Number(sessionStorage.getItem("quizScore")) || 0;
 
@@ -911,6 +911,22 @@ congratulationsSound.onended = () => {
                 ${message}
             </p>
 
+    <div class="finish-buttons">
+
+    <button id="printResults" class="start-btn">
+    📄 Download My Results
+</button>
+
+    <button id="viewSlideshow" class="start-btn">
+        📸 View Slideshow
+    </button>
+
+    <button id="playAgain" class="start-btn">
+        🔄 Play Quiz Again
+    </button>
+
+</div>
+
            <p class="finish-thanks">
     🥂 Thank you for taking part in
     <strong>Diane & Robert’s Golden Anniversary Challenge</strong>
@@ -928,21 +944,7 @@ congratulationsSound.onended = () => {
     Golden Wedding Anniversary • 2026
 </p>
 
-<div class="finish-buttons">
 
-    <button id="printResults" class="start-btn">
-    📄 Download My Results
-</button>
-
-    <button id="viewSlideshow" class="start-btn">
-        📸 View Slideshow
-    </button>
-
-    <button id="playAgain" class="start-btn">
-        🔄 Play Quiz Again
-    </button>
-
-</div>
 
         </div>
     `;
