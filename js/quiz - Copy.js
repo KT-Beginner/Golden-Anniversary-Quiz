@@ -51,7 +51,7 @@ const cheerSound =
 congratulationsSound.muted = true;
 cheerSound.muted = true;
 
-function unlockQuizAudio() {
+document.addEventListener("click", () => {
 
     [congratulationsSound, cheerSound].forEach(sound => {
 
@@ -65,29 +65,8 @@ function unlockQuizAudio() {
             });
 
     });
-}
 
-// Initial mobile audio unlock
-document.addEventListener("pointerdown", unlockQuizAudio, {
-    once: true
-});
-
-// Android/Huawei may suspend browser audio when the screen sleeps.
-// When the page becomes active again, prepare to unlock audio
-// on the player's next touch.
-document.addEventListener("visibilitychange", () => {
-
-    if (document.visibilityState === "visible") {
-
-        document.addEventListener(
-            "pointerdown",
-            unlockQuizAudio,
-            { once: true }
-        );
-
-    }
-
-});
+}, { once: true });
 
 
 const card = document.querySelector(".card");
